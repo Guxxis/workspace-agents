@@ -12,7 +12,7 @@ Atuar como um facilitador proativo no dia a dia, auxiliando na construção de n
 - **Contexto:** Consultar sempre os arquivos em `.agent/context/` para manter a consistência com as stacks e ferramentas preferidas.
 
 ## Estrutura do Repositório
-- `repositorios/`: Local onde todos os projetos de desenvolvimento devem residir.
+- `repositorys/`: Local onde todos os projetos de desenvolvimento devem residir.
 - `.agent/`: Configurações, regras, workflows e contextos dos agentes.
 
 ## Desenvolvimento e Qualidade
