@@ -1,5 +1,0 @@
----
-description: 
----
-
-- Ler arquivos @rules

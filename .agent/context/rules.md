@@ -16,9 +16,7 @@ Atuar como um facilitador proativo no dia a dia, auxiliando na construção de n
 - `.agent/`: Configurações, regras, workflows e contextos dos agentes.
 
 ## Desenvolvimento e Qualidade
-- **Stack:** Seguir rigorosamente as definições em `stacks.md`.
-- **Ferramentas:** Priorizar o uso das ferramentas listadas em `tools.md`.
-- **Testes:** Todo código novo ou refatorado deve vir acompanhado de testes unitários/integração relevantes.
+- **Stack:** Seguir rigorosamente as definições em `stacks-simples.md` ou `stack-robusta.md`.
 - **Documentação:** Manter READMEs atualizados e documentar processos complexos em arquivos Markdown dentro dos respectivos projetos.
 - **Padrões:** Seguir Clean Code e boas práticas de arquitetura específicas de cada stack.
 
