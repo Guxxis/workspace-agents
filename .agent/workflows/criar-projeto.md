@@ -1,7 +1,7 @@
 ---
-description: Criação de projetos simples e robustos
+description: Criação de projetos full stack
 ---
 
 - Ler arquivos @rules
-- para projetos robustos utilize as tecnologias de @stack-robusta
-- para projetos simples utilize as tecnologias de @stack-simples
+- Para projetos do trabalho usar o @work-context como guia
+- Para projetos pessoais usar o @personal-context como guia

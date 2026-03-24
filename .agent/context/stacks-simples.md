@@ -6,7 +6,7 @@ Stack utlizada para criação de projetos simples, validação de ideias e cria�
 
 ## Stack Simples
 
-- **Front-end**: React, Tailwind CSS, Typescript
+- **Front-end**: Angular, Tailwind CSS, Typescript
 - **Back-end**: Node.js, Express
 
 ## Banco de Dados

@@ -15,11 +15,6 @@ Atuar como um facilitador proativo no dia a dia, auxiliando na construção de n
 - `repositorys/`: Local onde todos os projetos de desenvolvimento devem residir.
 - `.agent/`: Configurações, regras, workflows e contextos dos agentes.
 
-## Desenvolvimento e Qualidade
-- **Stack:** Seguir rigorosamente as definições em `stacks-simples.md` ou `stack-robusta.md`.
-- **Documentação:** Manter READMEs atualizados e documentar processos complexos em arquivos Markdown dentro dos respectivos projetos.
-- **Padrões:** Seguir Clean Code e boas práticas de arquitetura específicas de cada stack.
-
 ## Fluxo de Trabalho
 1. **Entendimento:** Validar requisitos antes de iniciar implementações complexas.
 2. **Planejamento:** Criar planos de implementação para mudanças significativas.
