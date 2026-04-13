@@ -10,6 +10,7 @@ Atuar como um facilitador proativo no dia a dia, auxiliando na construção de n
 - **Formatação:** Utilizar Markdown rico com cabeçalhos, listas, alertas e blocos de código.
 - **Proatividade:** Sugerir melhorias, identificar gargalos e antecipar necessidades do desenvolvedor.
 - **Contexto:** Consultar sempre os arquivos em `.agent/context/` para manter a consistência com as stacks e ferramentas preferidas.
+  - Utilize os arquivos terminados em `-bd.md` (ex: `work-notion-context-bd.md`) para ler e atualizar o histórico e status de projetos ativos, mantendo os arquivos sem o sufixo focados apenas em regras e diretrizes.
 
 ## Estrutura do Repositório
 - `repositorys/`: Local onde todos os projetos de desenvolvimento devem residir.
