@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "091d8c40b83f6457",
+    "id": "5c1c08f383bee645",
     "type": "split",
     "children": [
       {
-        "id": "de948c571ff7bdd8",
+        "id": "bcdcbcbed8f1d6c9",
         "type": "tabs",
         "children": [
           {
-            "id": "ca6019b586fd2fb2",
+            "id": "a618f9a1e1f15119",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -23,28 +23,28 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "5ef129ea7f2f916e",
+    "id": "88009d5f2f15bd04",
     "type": "split",
     "children": [
       {
-        "id": "c7ca08bb0ef376c1",
+        "id": "e49f674e18d9576c",
         "type": "tabs",
         "children": [
           {
-            "id": "00d08788cd099ede",
+            "id": "04cd36b6a2173ee9",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de arquivos"
             }
           },
           {
-            "id": "b9b7860f1c6eee86",
+            "id": "96a81919cae3a225",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "1f3679e4b1589fee",
+            "id": "7996aa2606764e40",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,15 +77,15 @@
     "width": 300
   },
   "right": {
-    "id": "fc8786b36ea28662",
+    "id": "5078bf26a173a71e",
     "type": "split",
     "children": [
       {
-        "id": "96298aa7c9de8c6a",
+        "id": "8a9d7713c661192a",
         "type": "tabs",
         "children": [
           {
-            "id": "381109b0b806ccab",
+            "id": "1c6dfe6ff5a62462",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -103,21 +103,20 @@
             }
           },
           {
-            "id": "6a0e08908afbe7f9",
+            "id": "7f9c88463a594f9f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para TODO"
+              "title": "Links de saída"
             }
           },
           {
-            "id": "19d91e293a6ee830",
+            "id": "3d2aea926c386708",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,7 +131,7 @@
             }
           },
           {
-            "id": "e17b78a468ff3b1c",
+            "id": "942caf423f8b60b3",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -146,18 +145,17 @@
             }
           },
           {
-            "id": "e075c36222152cc1",
+            "id": "c78ea38c2c24c4d1",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de TODO"
+              "title": "Sumário"
             }
           }
         ]
@@ -178,54 +176,27 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "ca6019b586fd2fb2",
+  "active": "a618f9a1e1f15119",
   "lastOpenFiles": [
-    "sync",
-    "ask",
-    "99_Prompts/agt-fluxo.md",
-    "90_Templates/output-modelo-fluxo.md",
-    "90_Templates/input-modelo-fluxo.md",
-    "repositorys/deploy-docsify/qa/pops/validacao.md",
+    "11_Audit",
+    "10_Daily/11_Audit",
+    "30_Work/ferramentas.md",
+    "30_Work/gitflow.md",
+    "30_Work/Infraestrutura.md",
+    "30_Work/stacks-simples.md",
+    "20_Personal/stacks-robusta.md",
+    "30_Work/Server-Inventory.md",
+    "00_Meta/System-Instructions.md",
+    "00_Meta/stacks-simples.md",
+    "00_Meta/stacks-robusta.md",
+    "00_Meta/Infraestrutura.md",
+    "00_Meta/gitflow.md",
+    "00_Meta/ferramentas.md",
+    "00_Meta",
     "90_Templates/DevOps Task.md",
-    "90_Templates/Daily Note.md",
-    "sync.ps1",
-    "ask.ps1",
-    "99_Prompts",
-    "90_Templates",
-    "30_Personal",
-    "20_Work",
-    "10_Daily",
-    "00_Inbox",
-    "repositorys/dns-validator/node_modules/playwright-core/lib/vite/traceViewer/assets/xtermModule-CsJ4vdCR.js",
-    "repositorys/dns-validator/node_modules/playwright-core/lib/vite/traceViewer/playwright-logo.svg",
-    "repositorys/dns-validator/node_modules/playwright-core/lib/vite/recorder/playwright-logo.svg",
-    "repositorys/dns-validator/node_modules/playwright-core/lib/server/chromium/appIcon.png",
-    "repositorys/dns-validator/node_modules/@streamparser/json/dist/deno/README.md",
-    "repositorys/dns-validator/node_modules/playwright/lib/agents/playwright-test-planner.agent.md",
-    "repositorys/dns-validator/node_modules/playwright/lib/agents/playwright-test-plan.prompt.md",
-    "repositorys/dns-validator/node_modules/playwright/lib/agents/playwright-test-healer.agent.md",
-    "repositorys/dns-validator/node_modules/playwright/lib/agents/playwright-test-heal.prompt.md",
-    "repositorys/dns-validator/node_modules/playwright/lib/agents/playwright-test-generator.agent.md",
-    "repositorys/dns-validator/node_modules/playwright/lib/agents/playwright-test-generate.prompt.md",
-    "repositorys/dns-validator/node_modules/playwright/lib/agents/playwright-test-coverage.prompt.md",
-    "repositorys/bb-api/node_modules/axios/lib/helpers/README.md",
-    "repositorys/bb-api/node_modules/axios/lib/env/README.md",
-    "repositorys/bb-api/node_modules/axios/lib/core/README.md",
-    "repositorys/bb-api/node_modules/axios/lib/adapters/README.md",
-    "repositorys/dns-validator/node_modules/json2csv/docs/parser-examples.md",
-    "repositorys/dns-validator/node_modules/json2csv/docs/cli-examples.md",
-    "repositorys/dns-validator/node_modules/@streamparser/json/README.md",
-    "repositorys/deploy-docsify/qa/image/qa/image.png",
-    "repositorys/deploy-docsify/qa/image/qa/image-99.png",
-    "repositorys/deploy-docsify/qa/image/qa/image-98.png",
-    "repositorys/deploy-docsify/qa/image/qa/image-97.png",
-    "repositorys/deploy-docsify/qa/image/qa/image-96.png",
-    "repositorys/deploy-docsify/qa/image/qa/image-95.png",
-    "repositorys/deploy-docsify/qa/image/qa/image-94.png",
-    "repositorys/dns-validator/node_modules/yocto-queue/readme.md",
-    "repositorys/dns-validator/node_modules/playwright-core/README.md",
-    "repositorys/dns-validator/node_modules/p-limit/readme.md",
-    "repositorys/dns-validator/node_modules/playwright/README.md",
-    "Sem título.canvas"
+    "Sem título.base",
+    "2026-04-16.md",
+    "templates",
+    "template"
   ]
 }
