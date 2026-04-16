@@ -1,10 +1,3 @@
-Ferramentas QA:
-- Checkbot
-- Screaming Frog
-- Lighthouse
-- W3C
-- Playwright e Cypress
-
 Ferramentas Deploy/SRE:
 - Bitbucket (modelo de versionamento de codigo, modelo gitflow)
 - VsCode (editor de codigo)

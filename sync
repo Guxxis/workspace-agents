@@ -1,0 +1,2 @@
+#!/bin/bash
+powershell.exe -ExecutionPolicy Bypass -File "C:/Workspace/sync.ps1" "$@"
