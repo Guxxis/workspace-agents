@@ -90,6 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "99_Prompts/update-notion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos"
+              "title": "Links inversos para update-notion"
             }
           },
           {
@@ -108,11 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "99_Prompts/update-notion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída"
+              "title": "Links de saída para update-notion"
             }
           },
           {
@@ -150,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "99_Prompts/update-notion.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário"
+              "title": "Sumário de update-notion"
             }
           }
         ]
@@ -178,14 +181,24 @@
   },
   "active": "a618f9a1e1f15119",
   "lastOpenFiles": [
+    "99_Prompts/update-notion.md",
+    "99_Prompts/criar-projeto.md",
+    "99_Prompts/criar-documentacao.md",
+    "99_Prompts/analisar-log.md",
+    "99_Prompts/agt-fluxo.md",
+    "30_Work/work-notion-context.md",
+    "30_Work/work-context.md",
+    "30_Work/stacks-simples.md",
+    "30_Work/Server-Inventory.md",
+    "30_Work/Infraestrutura.md",
+    "30_Work/gitflow.md",
+    "30_Work/ferramentas.md",
+    "20_Personal/personal-notion-context.md",
+    "20_Personal/stacks-robusta.md",
+    "10_Daily/personal-notion-context-bd.md",
+    "10_Daily/work-notion-context-bd.md",
     "11_Audit",
     "10_Daily/11_Audit",
-    "30_Work/ferramentas.md",
-    "30_Work/gitflow.md",
-    "30_Work/Infraestrutura.md",
-    "30_Work/stacks-simples.md",
-    "20_Personal/stacks-robusta.md",
-    "30_Work/Server-Inventory.md",
     "00_Meta/System-Instructions.md",
     "00_Meta/stacks-simples.md",
     "00_Meta/stacks-robusta.md",
