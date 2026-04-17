@@ -1,3 +1,9 @@
+---
+context: work
+status: active
+tags: [infrastructure, architecture, documentation]
+type: documentation
+---
 # Infraestrutura
 
 ## M3

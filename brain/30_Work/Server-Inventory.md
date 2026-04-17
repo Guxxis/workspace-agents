@@ -1,3 +1,9 @@
+---
+context: work
+status: active
+tags: [infrastructure, servers, ansible]
+type: inventory
+---
 IDEALTRENDS-PROJETOS ansible_host=165.227.65.173
 DW-BC-AUTOMACAO ansible_host=138.197.111.99
 FINAL-NYC ansible_host=142.93.72.35

@@ -9,7 +9,7 @@
   "mcp_servers": {
     "obsidian": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-obsidian", "--vault-path", "./brain"]
+      "args": ["-y", "@blacksmithers/obsidian-forge-mcp", "--vault-path", "./brain"]
     }
   }
 }
