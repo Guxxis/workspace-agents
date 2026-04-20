@@ -1,3 +1,12 @@
+---
+context: work
+status: active
+tags:
+  - stack
+  - simple
+type: documentation
+---
+
 # Stack Tecnológica
 
 Estas são as stacks de preferência, organizadas por categoria e maturidade de uso.

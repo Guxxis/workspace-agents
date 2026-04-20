@@ -1,4 +1,14 @@
-Ferramentas Deploy/SRE:
+---
+context: work
+status: active
+tags:
+  - ferramentas
+  - deploy
+  - sre
+type: documentation
+---
+
+## Ferramentas Deploy/SRE
 - Bitbucket (modelo de versionamento de codigo, modelo gitflow)
 - VsCode (editor de codigo)
 - Servidor Ubuntu (servidor de hospedagem)

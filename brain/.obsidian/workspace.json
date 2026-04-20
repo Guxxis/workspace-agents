@@ -6,6 +6,7 @@
       {
         "id": "bcdcbcbed8f1d6c9",
         "type": "tabs",
+        "dimension": 48.857868020304565,
         "children": [
           {
             "id": "a618f9a1e1f15119",
@@ -13,30 +14,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_Work/Familias-Servidores.md",
+                "file": "32_Diagnostics/Diagnostic-DSW-MKT01.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Familias-Servidores"
-            }
-          },
-          {
-            "id": "982e13cafa505de7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_Meta/Work-Index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Work-Index"
+              "title": "Diagnostic-DSW-MKT01"
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "6e503d04d890e6b5",
+        "type": "tabs",
+        "dimension": 51.14213197969543,
+        "children": [
+          {
+            "id": "7c1c9b0d1d8f709e",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +112,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_Meta/Work-Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +121,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Work-Index"
+              "title": "Links inversos"
             }
           },
           {
@@ -128,12 +130,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00_Meta/Work-Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Work-Index"
+              "title": "Links de saída"
             }
           },
           {
@@ -171,13 +172,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Meta/Work-Index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Work-Index"
+              "title": "Sumário"
             }
           }
         ],
@@ -199,39 +199,41 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "982e13cafa505de7",
+  "active": "7c1c9b0d1d8f709e",
   "lastOpenFiles": [
-    "00_Meta/System-Instructions.md",
-    "30_Work/Familias-Servidores.md",
-    "30_Work/ferramentas.md",
-    "30_Work/Infraestrutura.md",
-    "00_Meta/Work-Index.md",
+    "32_Diagnostics/Diagnostic-DSW-MKT01.md",
+    "32_Diagnostics/Diagnostic-DSW-SOLUCOES-DSW01-backup.md",
+    "32_Diagnostics",
+    "90_Templates/Template-Auditoria-Servidor.md",
+    "31_Audit/Template-Auditoria-Servidor.md",
+    "31_Audit/Audit-DSW-SOLUCOES-DSW01.md",
+    "31_Audit/Audit-DSW-MKT01.md",
+    "30_Work/Infraestructure.md",
+    "31_Audit",
+    "11_Audit/Audit-DSW-MKT01.md",
+    "30_Work/Audit-DSW-MKT01.md",
+    "30_Work/Notion-Context.md",
+    "30_Work/Profile-Config.md",
+    "30_Work/Stacks-simples.md",
+    "30_Work/Work-context.md",
+    "30_Work/Gitflow.md",
+    "30_Work/Ferramentas.md",
+    "00_Meta/Profile-Config.md",
     "30_Work/Server-Inventory.md",
+    "30_Work/Server-Family.md",
+    "00_Meta/Work-Index.md",
+    "00_Meta/System-Instructions.md",
     "12_Notes",
     "99_Prompts/update-notion.md",
     "99_Prompts/criar-projeto.md",
     "99_Prompts/criar-documentacao.md",
     "99_Prompts/analisar-log.md",
     "99_Prompts/agt-fluxo.md",
-    "30_Work/work-notion-context.md",
-    "30_Work/work-context.md",
-    "30_Work/stacks-simples.md",
-    "30_Work/gitflow.md",
     "20_Personal/personal-notion-context.md",
-    "20_Personal/stacks-robusta.md",
-    "10_Daily/personal-notion-context-bd.md",
-    "10_Daily/work-notion-context-bd.md",
     "11_Audit",
     "10_Daily/11_Audit",
-    "00_Meta/stacks-simples.md",
-    "00_Meta/stacks-robusta.md",
-    "00_Meta/Infraestrutura.md",
-    "00_Meta/gitflow.md",
-    "00_Meta/ferramentas.md",
     "00_Meta",
-    "90_Templates/DevOps Task.md",
     "Sem título.base",
-    "2026-04-16.md",
     "templates",
     "template"
   ]
