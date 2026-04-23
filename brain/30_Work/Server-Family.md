@@ -54,7 +54,6 @@ quantidade = numero de familias com o mesmo objetivo
 - DO-IT-SATELITES
 - DO-IT-AUTOMACAO
 - DO-IT-SISTEMAS
-- M3-IT-SISTEMAS
 
 ### Ideal Sales
 - M3-IS-SISTEMAS

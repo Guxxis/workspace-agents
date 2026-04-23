@@ -173,8 +173,8 @@ Com o script corrigido (limpeza antes do backup), o disco manterá sempre **no m
 
 ## 📋 Checklist de Ações
 
-- [ ] Autorizar e executar limpeza do backup de Sábado 18/04 (125 GB)
-- [ ] Corrigir `dados.sh`: mover `find ... rm` para antes do loop de tar
+- [x] Autorizar e executar limpeza do backup de Sábado 18/04 (125 GB)
+- [x] Corrigir `dados.sh`: mover `find ... rm` para antes do loop de tar
 - [ ] Validar execução do script corrigido na próxima madrugada
 - [ ] Executar `df -h /backup` no dia seguinte para confirmar estabilização
 - [ ] Comunicar à M3 que o upgrade pode ser adiado (com justificativa técnica)

@@ -6,7 +6,6 @@
       {
         "id": "bcdcbcbed8f1d6c9",
         "type": "tabs",
-        "dimension": 48.857868020304565,
         "children": [
           {
             "id": "a618f9a1e1f15119",
@@ -14,23 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "32_Diagnostics/Diagnostic-DSW-MKT01.md",
+                "file": "30_Work/Stacks-Default.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Diagnostic-DSW-MKT01"
+              "title": "Stacks-Default"
             }
           }
         ]
       },
       {
-        "id": "6e503d04d890e6b5",
+        "id": "920adec0808714fe",
         "type": "tabs",
-        "dimension": 51.14213197969543,
         "children": [
           {
-            "id": "7c1c9b0d1d8f709e",
+            "id": "552549f298c88d20",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -112,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "32_Diagnostics/Diagnostic-DSW-SOLUCOES-DSW01-backup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos"
+              "title": "Links inversos para Diagnostic-DSW-SOLUCOES-DSW01-backup"
             }
           },
           {
@@ -130,11 +129,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "32_Diagnostics/Diagnostic-DSW-SOLUCOES-DSW01-backup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída"
+              "title": "Links de saída para Diagnostic-DSW-SOLUCOES-DSW01-backup"
             }
           },
           {
@@ -172,21 +172,33 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "32_Diagnostics/Diagnostic-DSW-SOLUCOES-DSW01-backup.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário"
+              "title": "Sumário de Diagnostic-DSW-SOLUCOES-DSW01-backup"
+            }
+          },
+          {
+            "id": "bb315cf6e934d405",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "30_Work/Stacks-Default.md"
+              },
+              "icon": "lucide-info",
+              "title": "Propriedades do arquivo Stacks-Default"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,37 +211,37 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "7c1c9b0d1d8f709e",
+  "active": "a618f9a1e1f15119",
   "lastOpenFiles": [
-    "32_Diagnostics/Diagnostic-DSW-MKT01.md",
+    "30_Work/Deploy.md",
+    "20_Personal/Stacks-simples.md",
+    "30_Work/Stacks-Default.md",
+    "30_Work/Profile-Config.md",
+    "30_Work/Server-Family.md",
+    "30_Work/Server-Inventory.md",
     "32_Diagnostics/Diagnostic-DSW-SOLUCOES-DSW01-backup.md",
-    "32_Diagnostics",
-    "90_Templates/Template-Auditoria-Servidor.md",
-    "31_Audit/Template-Auditoria-Servidor.md",
     "31_Audit/Audit-DSW-SOLUCOES-DSW01.md",
+    "32_Diagnostics/Diagnostic-DSW-MKT01.md",
     "31_Audit/Audit-DSW-MKT01.md",
+    "90_Templates/Template-Auditoria-Servidor.md",
+    "30_Work/Notion-Context.md",
     "30_Work/Infraestructure.md",
+    "30_Work/Gitflow.md",
+    "30_Work/Ferramentas.md",
+    "00_Meta/Work-Index.md",
+    "00_Meta/System-Instructions.md",
+    "32_Diagnostics",
+    "31_Audit/Template-Auditoria-Servidor.md",
     "31_Audit",
     "11_Audit/Audit-DSW-MKT01.md",
     "30_Work/Audit-DSW-MKT01.md",
-    "30_Work/Notion-Context.md",
-    "30_Work/Profile-Config.md",
-    "30_Work/Stacks-simples.md",
     "30_Work/Work-context.md",
-    "30_Work/Gitflow.md",
-    "30_Work/Ferramentas.md",
     "00_Meta/Profile-Config.md",
-    "30_Work/Server-Inventory.md",
-    "30_Work/Server-Family.md",
-    "00_Meta/Work-Index.md",
-    "00_Meta/System-Instructions.md",
     "12_Notes",
     "99_Prompts/update-notion.md",
     "99_Prompts/criar-projeto.md",
     "99_Prompts/criar-documentacao.md",
     "99_Prompts/analisar-log.md",
-    "99_Prompts/agt-fluxo.md",
-    "20_Personal/personal-notion-context.md",
     "11_Audit",
     "10_Daily/11_Audit",
     "00_Meta",
