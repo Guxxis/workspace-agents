@@ -1,14 +1,7 @@
 ---
-context: work
-status: active
-tags:
-  - infrastructure
-  - architecture
-  - documentation
-  - servers
-  - gitflow
-  - cloud
-type: documentation
+tags: [infrastructure, architecture, cloud, networking, vpn]
+description: Visão geral da infraestrutura, provedores (M3, DO), redes e configurações SSH/VPN.
+type: work
 ---
 # Infraestrutura
 
@@ -28,6 +21,14 @@ type: documentation
 - Principal Stack: PHP, MySQL, Apache, Wordpress
 - Maquinas ubuntu com painel de controle Vesta CP ou Hestia CP
 - Maquinas de Produção, Homologação e Staging
+
+### Pacotes e Configurações Hestia / Vesta
+O HestiaCP atua servindo os arquivos externamente via **Nginx** (Proxy Cache estático) e internamente com processamento por trás de um **Apache**.
+- **Serviços Nativos:** Nginx, Apache2, MySQL/MariaDB, Postgre (Hestia), Exim/Dovecot.
+- **Packs Extras Injetados para Sistemas Modernos:**
+  - **Node.js** e **NPM** (via apt ou asdf/nvm).
+  - **PM2**: Gerenciador de processos instalado globalmente (`npm install -g pm2`) utilizado para sustentar os backends em Node mantendo-os imunes a quedas ou crashes.
+  - **Nginx Wildcard Includes**: Mecanismo de criação massiva de proxies reversos. Inclusão de blocos personalizados utilizando curingas do painel (`nginx.ssl.conf_*`) nas pastas `conf/web/seudominio/` para repassar conexões API ao PM2 rodando no localhost sem conflitar com configurações originais.
 
 ## Digital Ocean
 

@@ -1,12 +1,7 @@
 ---
-context: work
-status: active
-tags:
-  - infrastructure
-  - audit
-  - backup
-  - dsw-solucoes-dsw01
-type: action-plan
+tags: [infrastructure, audit, backup, dsw-solucoes-dsw01]
+description: Plano de ação para auditoria de disco e backup no servidor DSW-SOLUCOES-DSW01.
+type: audit
 ---
 
 # 🕵️‍♂️ Plano de Ação: Auditoria de Disco no DSW-SOLUCOES-DSW01

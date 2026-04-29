@@ -1,11 +1,7 @@
 ---
-context: work
-status: active
-tags:
-  - infrastructure
-  - audit
-  - template
-type: action-plan-template
+tags: [template, audit, infrastructure, sre]
+description: Modelo padrão para planos de ação de auditoria de incidentes em servidores.
+type: template
 ---
 
 # 🕵️‍♂️ Plano de Ação: Auditoria de Incidente em Servidor

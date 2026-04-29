@@ -1,7 +1,8 @@
 ---
-description: Criação de projetos full stack
+tags: [meta, prompt, boilerplate]
+description: Instruções para criação de novos projetos Full Stack.
+type: meta
 ---
 
 - Ler arquivos @rules
-- Para projetos do trabalho usar o @work-context como guia
-- Para projetos pessoais usar o @personal-context como guia
+- Para projetos do trabalho usar o [[30_Work/Notion-Context.md]] como guia

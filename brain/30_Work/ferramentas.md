@@ -1,11 +1,7 @@
 ---
-context: work
-status: active
-tags:
-  - ferramentas
-  - deploy
-  - sre
-type: documentation
+tags: [tools, sre, infrastructure, devops]
+description: Lista de ferramentas e utilitários utilizados no ecossistema de infraestrutura e SRE.
+type: work
 ---
 
 ## Ferramentas Deploy/SRE

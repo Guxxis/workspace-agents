@@ -1,13 +1,7 @@
 ---
-tags:
-  - servers
-  - documentation
-  - infrastructure
-  - family
-last_updated: 2026-04-17
-context: work
-type: documentation
-description: documentação do agrupamento de servidores separado por familia
+tags: [servers, infrastructure, documentation, family]
+description: Documentação do agrupamento de servidores separado por família e regras de nomenclatura.
+type: work
 ---
 ## PADRONIZAÇÃO 
 |Tipo de Uso|Ambiente:|
@@ -78,4 +72,33 @@ quantidade = numero de familias com o mesmo objetivo
 ## Ideal Marketing
 - M3-IM-BLOGS
 - M3-IM-SISTEMAS
+
+## PADRONIZAÇÃO DE TEMPLATES HESTIACP
+Para garantir persistência e evitar que o painel Hestia sobrescreva configurações manuais de Nginx.
+
+### Template: NodeJS-SPA
+**Objetivo:** Servir Frontend SPA (Vite/React/Vue) diretamente pelo Nginx e agir como Proxy para o Backend (PM2).
+
+*   **Localização no Servidor:** `/usr/local/hestia/data/templates/web/nginx/`
+*   **Arquivos:** `NodeJS-SPA.tpl` (HTTP) e `NodeJS-SPA.stpl` (HTTPS)
+
+#### Lógica Principal (Nginx):
+```nginx
+# Proxy para API (PM2)
+location /api/ {
+    proxy_pass http://127.0.0.1:3333;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+}
+
+# Roteamento SPA
+location / {
+    root %docroot%;
+    try_files $uri $uri/ /index.html;
+}
+```
+
 

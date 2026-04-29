@@ -1,3 +1,8 @@
+---
+tags: [notion, project-status, work-history]
+description: Base de dados para histórico de tarefas, decisões e status de projetos ativos no Notion.
+type: daily
+---
 # Histórico e Status de Projetos Ativos - Notion Trabalho
 
 Este arquivo serve como base de dados para o histórico de tarefas, decisões e status de projetos ativos no Notion de trabalho.
@@ -19,3 +24,9 @@ Este arquivo serve como base de dados para o histórico de tarefas, decisões e 
 
 ---
 *Última sincronização completa: 13/04/2026*
+
+- **Otimização de Servidor VESTACP01:**
+  - **Status:** Triagem (Criado em 24/04/26).
+  - **IP:** 192.168.3.20.
+  - **Detalhes:** Identificado gargalo de CPU causado por elevado número de leituras no banco de dados no sistema de cookies da doutores.
+  - **Próximos Passos:** Analisar queries e otimizar sistema de cookies.

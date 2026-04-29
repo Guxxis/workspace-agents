@@ -1,12 +1,14 @@
 ---
-description: Fluxo de trabalho para criar uma nova documentação de processo, garantindo o uso dos modelos e instruções corretos.
+tags: [meta, prompt, workflow]
+description: Fluxo de trabalho para criação de novas documentações de processo.
+type: meta
 ---
 
-1. Ler contexto estático (para consistência de nomenclatura): @[.agent/context/ferramentas.md], @[.agent/context/fluxos.md]
-2. Ler o arquivo de instruções do agente: @[.agent/prompts/agt-documentacao.md]
-2. Ler o modelo de input: @[.agent/templates/input-modelo-documentacao.md]
-3. Ler o modelo de output: @[.agent/templates/output-modelo-documentacao.md]
-4. Seguir rigorosamente as instruções em `agt-documentacao.md` para:
-    a. Solicitar os dados de entrada do usuário conforme `input-modelo-documentacao.md`.
+1. Ler contexto estático (para consistência de nomenclatura): [[30_Work/Ferramentas.md]], [[00_Meta/Work-Index.md]]
+2. Ler o arquivo de instruções do agente: [[99_Prompts/agt-fluxo.md]]
+3. Ler o modelo de input: [[90_Templates/input-modelo-fluxo.md]]
+4. Ler o modelo de output: [[90_Templates/output-modelo-fluxo.md]]
+5. Seguir rigorosamente as instruções em `agt-fluxo.md` para:
+    a. Solicitar os dados de entrada do usuário conforme `input-modelo-fluxo.md`.
     b. Validar a entrada.
-    c. Gerar a documentação final conforme `output-modelo-documentacao.md`.
+    c. Gerar a documentação final conforme `output-modelo-fluxo.md`.

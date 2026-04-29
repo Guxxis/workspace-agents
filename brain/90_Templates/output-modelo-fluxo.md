@@ -1,3 +1,8 @@
+---
+tags: [template, workflow, output]
+description: Modelo padrão para documentação final de fluxos operacionais.
+type: template
+---
 # NOME DO PROCESSO: [Nome do Fluxo/Processo]
 
 - **Responsável**: [Squad/Time Responsável]

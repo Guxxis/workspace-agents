@@ -1,94 +1,75 @@
 ---
-context: work
-status: active
-tags:
-  - gitflow
-  - conventional-commits
-  - bitbucket
-type: documentation
+tags: [git, gitflow, ci-cd, bitbucket, jira]
+description: Definição do fluxo de trabalho de Git Flow integrado ao CI/CD e JIRA.
+type: work
 ---
 
-# Bitbucket
+# Git Flow & CI/CD Documentation
 
-## Padrao de Repositorios
+Este documento define o padrão de desenvolvimento, versionamento e automação para os projetos da Ideal Trends, utilizando **Git Flow** integrado ao **Bitbucket Pipelines** e **JIRA**.
 
-Modelo de versionamento de codigo: GitFlow adaptado
-- branch main → branch de produção
-- branch develop → branch de desenvolvimento
-- branch feature/ticket-jira → branch de desenvolvimento de novas funcionalidades
-- branch hotfix/ticket-jira → branch de correção de bugs
+## 1. Estrutura de Branches
 
+As branches devem seguir rigorosamente a nomenclatura abaixo para garantir a integração com o JIRA (`INCE`) e gatilhos de pipeline.
 
-## Novo Repositorios (Projeto ou Testes)
+| Branch | Origem | Destino | Descrição |
+| :--- | :--- | :--- | :--- |
+| `main` | - | - | Código estável em produção. |
+| `develop` | `main` | - | Código em estágio de integração/homologação (Staging). |
+| `feature/*` | `develop` | `develop` | Novas funcionalidades. Ex: `feature/INCE-123-login-social` |
+| `bugfix/*` | `develop` | `develop` | Correções de bugs em desenvolvimento. |
+| `release/*` | `develop` | `main` & `develop` | Preparação para produção. Ex: `release/INCE-456-v1.1.0` |
+| `hotfix/*` | `main` | `main` & `develop` | Correções críticas em produção. Ex: `hotfix/INCE-999-v1.1.1` |
 
-- Projeto → atrelado a empresa (ex: doutores-da-web, grupo-ideal-trends, ideal-marketing)
-- Nome → nome do projeto sempre com o dominio e subdominio se tiver (ex: doutores-da-web.com.br, blog.doutores-da-web.com.br)
-- Default Branch → main
-- arquivo README.md → deve conter informações sobre o projeto, como instalar, como rodar, como testar, como fazer deploy, etc
+## 2. Ciclo de Vida do Desenvolvimento
 
-## Padrao de Commits
+### 2.1. Iniciando uma Tarefa (Feature)
+1.  Crie uma branch a partir da `develop`.
+2.  **Nomeclatura**: `feature/INCE-XXX-descricao`. O prefixo `INCE-XXX` é vital para o JIRA.
+3.  Desenvolva e realize commits seguindo a [Commit Convention](file:///c:/Users/gustavo.goncalves/projetos/workspace/brain/90_Templates/Commit-Convention.md).
 
-**escopo:** mensagem no imperativo do que mudou no codigo
+### 2.2. Integração (Pull Request para Develop)
+1.  Ao finalizar a feature, abra um PR para a branch `develop`.
+2.  **Pipeline**: O gatilho `pullrequest-created` ativará automaticamente os **Testes Unitários**.
+3.  Após aprovação e sucesso dos testes, realize o merge.
+4.  O merge para `develop` dispara o **Deploy em Staging (Homologação)**.
 
-### Lista de escopos
+### 2.3. Lançamento (Release)
+1.  Quando a `develop` estiver estável, crie uma branch `release/INCE-XXX-vX.Y.Z`.
+2.  **Pipeline**:
+    -   Executa **Testes E2E** e de Integração.
+    -   Cria automaticamente uma **Tag** (ex: `v1.2.0`) baseada no nome da branch.
+3.  Abra um Pull Request para a `main`.
+4.  Realize o merge do PR para a `main`.
 
-- **build:** Alterações que afetam o sistema de build ou dependências externas.
-- **ci:** Alterações nos arquivos de configuração e scripts de integração contínua
-- **docs:** Alterações exclusivamente na documentação.
-- **feat:** Adição de uma nova funcionalidade.
-- **fix:** Correção de um bug.
-- **perf:** Alteração no código para melhorar o desempenho.
-- **refactor:** Alteração no código que não corrige um bug nem adiciona uma nova funcionalidade.
-- **style:** Alterações que não afetam a lógica do código
-- **test:** Adição de testes ausentes ou correção de testes existentes.
-- **remove:** Exclusão de arquivos, funcionalidades obsoletas ou não utilizadas
+### 2.4. Produção e Sincronização
+1.  O merge na `main` dispara o **Deploy em Produção**.
+2.  **Sync-back**: Após o deploy, a pipeline realiza o merge automático da `main` de volta para a `develop` (`main -> develop`) para garantir que correções de release/hotfix não sejam perdidas.
 
-### **Exemplo**
+## 3. Padrões Complementares
 
-`remove: deleta arquivos antigos`
+-   **Commits**: Veja o arquivo [Commit-Convention.md](file:///c:/Users/gustavo.goncalves/projetos/workspace/brain/90_Templates/Commit-Convention.md).
+-   **Tags**: Veja o arquivo [Tag-Convention.md](file:///c:/Users/gustavo.goncalves/projetos/workspace/brain/90_Templates/Tag-Convention.md).
 
-`feat: adiciona pagina contato`
+## 4. Comandos Úteis
 
-`fix: corrige botao do menu`
-
-## Commits
-
+### Criar Release
 ```bash
-git clone [repositorio]
-git checkout -b [feature]/[ticket jira]
-git add .
-git commit -m “scopo: mensagem commit”
-git push origin [feature]/[ticket jira]
-git pull origin [feature]/[ticket jira]
+git checkout develop
+git pull origin develop
+git checkout -b release/INCE-123-v1.1.0
+git push origin release/INCE-123-v1.1.0
 ```
 
-## Conflitos
-
+### Criar Hotfix
 ```bash
-git clone [repositorio]
-git checkout [feature]/[ticket jira]
-git merge master
-git checkout [--ours || --theirs] . (vai depender da situação)
-git add .
-git commit -m “fix: corrigi commit”
-git push origin [feature]/[ticket jira]
+git checkout main
+git pull origin main
+git checkout -b hotfix/INCE-456-v1.1.1
+git push origin hotfix/INCE-456-v1.1.1
 ```
 
-## Tags
+---
 
-```bash
-git tag v1.1.0 -m "Adicionando nova funcionalidade X"
-git tag
-git push origin v1.1.0
-git push origin --tags
-git tag -d v1.0.0
-git push origin --delete v1.0.0
-git show v1.0.0
-```
-
-## Reset
-
-```bash
-git reset --soft HEAD~1
-git reset
-```
+> [!NOTE]
+> Toda automação é gerenciada pelo arquivo `bitbucket-pipelines.yml`. Certifique-se de que a variável `REPO_TOKEN` esteja configurada no repositório.

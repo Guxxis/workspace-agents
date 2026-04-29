@@ -1,9 +1,7 @@
 ---
-context: work
-status: active
-tags:
-  - profile
-type: profile
+tags: [profile, identity, bio]
+description: Informações de perfil e identificação do usuário no workspace.
+type: work
 ---
 
 Nome(Usuario dessa maquina): Gustavo Gonçalves

@@ -1,11 +1,7 @@
 ---
-context: work
-status: active
-tags:
-  - infrastructure
-  - servers
-  - ip
-type: inventory
+tags: [infrastructure, servers, inventory, ip]
+description: Inventário detalhado de todos os servidores, IPs e status do Grupo Ideal Trends.
+type: work
 ---
 
 ## Tabela de Servidores Grupo Ideal Trends

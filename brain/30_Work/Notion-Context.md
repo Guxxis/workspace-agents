@@ -1,3 +1,8 @@
+---
+tags: [notion, workflow, organization, tasks]
+description: Regras de interação, gestão de tarefas e organização de informações no Notion.
+type: work
+---
 # Contexto de Trabalho - Notion e Organização
 
 ## Regras de Interação com o Notion

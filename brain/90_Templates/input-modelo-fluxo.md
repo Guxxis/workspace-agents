@@ -1,3 +1,8 @@
+---
+tags: [template, workflow, input]
+description: Modelo padrão para entrada de dados de novos fluxos operacionais.
+type: template
+---
 # [NOME DO FLUXO/PROCESSO]
 
 Objetivo: [Descreva aqui o objetivo deste fluxo]

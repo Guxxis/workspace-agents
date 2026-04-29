@@ -1,12 +1,7 @@
 ---
-context: work
-status: active
-tags:
-  - infrastructure
-  - audit
-  - dsw-mkt01
-  - disk-cleanup
-type: action-plan
+tags: [audit, infrastructure, dsw-mkt01, disk-cleanup]
+description: Plano de ação para auditoria de disco no servidor DSW-MKT01.
+type: audit
 ---
 
 # 🕵️‍♂️ Plano de Ação: Auditoria de Disco no DSW-MKT01

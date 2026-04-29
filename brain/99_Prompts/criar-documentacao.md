@@ -1,5 +1,7 @@
 ---
-description: Criação e melhoria de documentação de projetos
+tags: [meta, prompt, documentation]
+description: Instruções para criação e melhoria de documentação de projetos.
+type: meta
 ---
 
 - Ler arquivos @rules

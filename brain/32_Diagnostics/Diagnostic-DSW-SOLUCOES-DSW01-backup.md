@@ -1,16 +1,7 @@
 ---
-context: work
-status: active
-tags:
-  - infrastructure
-  - audit
-  - backup
-  - dsw-solucoes-dsw01
-  - diagnostic
-type: diagnostic-report
-date: 2026-04-20
-server: DSW-SOLUCOES-DSW01
-ip: 192.168.3.135
+tags: [infrastructure, diagnostic, backup, dsw-solucoes-dsw01]
+description: Relatório de diagnóstico da falha de backup e deadlock de disco no servidor DSW-SOLUCOES-DSW01.
+type: diagnostic
 ---
 
 # 🔍 Diagnóstico: Partição /backup — DSW-SOLUCOES-DSW01

@@ -1,14 +1,7 @@
 ---
-context: work
-status: active
-tags:
-  - infrastructure
-  - audit
-  - dsw-mkt01
-  - disk-cleanup
-  - diagnostico
-type: diagnostico
-date: 2026-04-20
+tags: [diagnostic, infrastructure, dsw-mkt01, disk-cleanup]
+description: Diagnóstico detalhado de uso de disco e ofensores no servidor DSW-MKT01.
+type: diagnostic
 ---
 
 # 🔍 Diagnóstico de Disco — DSW-MKT01
