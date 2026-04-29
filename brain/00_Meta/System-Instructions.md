@@ -20,8 +20,9 @@ O diretório `brain/` é a fonte única de verdade (Single Source of Truth) para
   - `00_Meta/`: Configurações do sistema e índices globais.
   - `10_Daily/`: Logs diários de atividades e decisões.
   - `30_Work/`: Documentação técnica de infraestrutura, redes e serviços.
-  - `31_Audit/`: Registros de auditoria e segurança.
-  - `32_Diagnostics/`: Logs de troubleshooting e análises de performance.
+  - `31_Gitflow/`: Governança de repositórios, Gitflow e padrões de código.
+  - `20_Audit/`: Registros de auditoria e segurança.
+  - `21_Diagnostics/`: Logs de troubleshooting e análises de performance.
   - `90_Templates/`: Modelos padronizados para novos arquivos.
 
 ## 📋 Regras de Formatação de Arquivos

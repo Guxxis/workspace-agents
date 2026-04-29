@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Meta/Brain-Refresh.md",
+                "file": "31_Gitflow/Gitflow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brain-Refresh"
+              "title": "Gitflow"
             }
           }
         ],
@@ -203,9 +203,11 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {},
+              "state": {
+                "file": "31_Gitflow/Gitflow.md"
+              },
               "icon": "lucide-info",
-              "title": "Propriedades dos arquivos"
+              "title": "Propriedades do arquivo Gitflow"
             }
           }
         ],
@@ -227,11 +229,23 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "b28b011872eb4645",
+  "active": "1186231cf2defbe0",
   "lastOpenFiles": [
+    "31_Gitflow/Commit-Convention.md",
+    "31_Gitflow/Bitbucket-Standards.md",
+    "00_Meta/Brain-Refresh.md",
+    "21_Diagnostics/Diagnostic-DSW-SOLUCOES-DSW01-backup.md",
+    "21_Diagnostics/Diagnostic-DSW-MKT01.md",
+    "21_Diagnostics",
+    "20_Audit/Audit-DSW-MKT01.md",
+    "20_Audit/Audit-DSW-SOLUCOES-DSW01.md",
+    "20_Audit",
+    "31_Gitflow/Tag-Convention.md",
+    "31_Gitflow/Gitflow.md",
+    "31_Gitflow",
+    "30_Work/Bitbucket-Standards.md",
     "30_Work/Backup-Policy.md",
     "90_Templates/Template-RCA-PostMortem.md",
-    "00_Meta/Brain-Refresh.md",
     "00_Meta/System-Instructions.md",
     "00_Meta/Work-Index.md",
     "30_Work/Profile-Config.md",
@@ -246,24 +260,12 @@
     "10_Daily/personal-notion-context-bd.md",
     "90_Templates/input-modelo-fluxo.md",
     "90_Templates/Bitbucket-Pipelines-Deploy.md",
-    "30_Work/Jenkinsfile.md",
-    "30_Work/Tag-Convention.md",
     "90_Templates/Jenkinsfile.template",
-    "12_Notes/bitbucket-pipelines.md",
-    "30_Work/Server-Family.md",
-    "30_Work/Stacks-Default.md",
-    "20_Personal/Stacks-simples.md",
-    "30_Work/Server-Inventory.md",
-    "32_Diagnostics/Diagnostic-DSW-SOLUCOES-DSW01-backup.md",
-    "31_Audit/Audit-DSW-SOLUCOES-DSW01.md",
     "32_Diagnostics",
     "31_Audit",
     "12_Notes",
     "11_Audit",
     "10_Daily/11_Audit",
-    "00_Meta",
-    "Sem título.base",
-    "templates",
-    "template"
+    "00_Meta"
   ]
 }

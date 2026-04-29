@@ -6,7 +6,7 @@ type: work
 
 # Git Flow & CI/CD Documentation
 
-Este documento define o padrão de desenvolvimento, versionamento e automação para os projetos da Ideal Trends, utilizando **Git Flow** integrado ao **Bitbucket Pipelines** e **JIRA**.
+Este documento define o padrão de desenvolvimento, versionamento e automação para os projetos da Ideal Trends, utilizando **Git Flow** integrado ao **Bitbucket Pipelines** (seguindo os [[31_Gitflow/Bitbucket-Standards|Bitbucket Standards]]) e **JIRA**.
 
 ## 1. Estrutura de Branches
 
@@ -26,7 +26,7 @@ As branches devem seguir rigorosamente a nomenclatura abaixo para garantir a int
 ### 2.1. Iniciando uma Tarefa (Feature)
 1.  Crie uma branch a partir da `develop`.
 2.  **Nomeclatura**: `feature/INCE-XXX-descricao`. O prefixo `INCE-XXX` é vital para o JIRA.
-3.  Desenvolva e realize commits seguindo a [Commit Convention](file:///c:/Users/gustavo.goncalves/projetos/workspace/brain/90_Templates/Commit-Convention.md).
+3.  Desenvolva e realize commits seguindo a [[31_Gitflow/Commit-Convention|Commit Convention]].
 
 ### 2.2. Integração (Pull Request para Develop)
 1.  Ao finalizar a feature, abra um PR para a branch `develop`.
@@ -48,8 +48,8 @@ As branches devem seguir rigorosamente a nomenclatura abaixo para garantir a int
 
 ## 3. Padrões Complementares
 
--   **Commits**: Veja o arquivo [Commit-Convention.md](file:///c:/Users/gustavo.goncalves/projetos/workspace/brain/90_Templates/Commit-Convention.md).
--   **Tags**: Veja o arquivo [Tag-Convention.md](file:///c:/Users/gustavo.goncalves/projetos/workspace/brain/90_Templates/Tag-Convention.md).
+-   **Commits**: Veja o arquivo [[31_Gitflow/Commit-Convention|Commit-Convention.md]].
+-   **Tags**: Veja o arquivo [[31_Gitflow/Tag-Convention|Tag-Convention.md]].
 
 ## 4. Comandos Úteis
 

@@ -15,7 +15,8 @@ Este arquivo serve como o ponto de entrada central para a organização do conhe
 | `00_Meta/` | Configurações do sistema, instruções do assistente, índice e [[Brain-Refresh\|protocolo de refresh]]. |
 | `10_Daily/` | Registro de atividades diárias e decisões rápidas. |
 | `12_Notes/` | Notas gerais, rascunhos e estudos técnicos. |
-| `30_Work/` | **Core**: Documentação de infraestrutura, padrões e guias de projeto. |
+| `30_Work/` | **Core**: Documentação de infraestrutura, operações e guias de projeto. |
+| `31_Gitflow/` | **Governance**: Padrões de Git, Commits, Tags e Bitbucket. |
 | `31_Audit/` | Trilhas de auditoria, histórico de mudanças sensíveis. |
 | `32_Diagnostics/` | Análises de incidentes, logs de erro e troubleshooting. |
 | `90_Templates/` | Modelos para Jenkinsfiles, pipelines e auditorias. |
@@ -28,16 +29,20 @@ Este arquivo serve como o ponto de entrada central para a organização do conhe
 - [[Infraestructure]]: Visão geral da arquitetura de rede e serviços.
 - [[Profile-Config]]: Configurações de perfis e acessos.
 
-### Padrões e Processos
-- [[Gitflow]]: Fluxo de trabalho para ramificação e releases.
-- [[Commit-Convention]]: Padrão de mensagens de commit (Conventional Commits).
-- [[Tag-Convention]]: Padrão de versionamento e tags de release.
-- [[Stacks-Default]]: Tecnologias e stacks padrão utilizadas nos projetos.
-
 ### Operações
 - [[Deploy]]: Guia e procedimentos de implantação.
 - [[Ferramentas]]: Lista de ferramentas e utilitários aprovados.
 - [[Notion-Context]]: Integração e contexto do workspace no Notion.
+- [[Backup-Policy]]: Política de backup, retenção e janelas de execução.
+
+## ⚖️ Governança e Repositórios (31_Gitflow)
+
+### Padrões de Código e Versão
+- [[31_Gitflow/Gitflow|Gitflow]]: Fluxo de trabalho para ramificação e releases.
+- [[31_Gitflow/Commit-Convention|Commit Convention]]: Padrão de mensagens de commit (Conventional Commits).
+- [[31_Gitflow/Tag-Convention|Tag Convention]]: Padrão de versionamento e tags de release.
+- [[31_Gitflow/Bitbucket-Standards|Bitbucket Standards]]: Padrões de nomenclatura e organização do Bitbucket.
+- [[Stacks-Default]]: Tecnologias e stacks padrão utilizadas nos projetos.
 
 ## 📝 Templates e Utilitários
 - [[90_Templates/Template-Auditoria-Servidor|Modelo de Auditoria]]: Modelo para novos logs de auditoria.
