@@ -47,12 +47,12 @@ Este arquivo serve como o ponto de entrada central para a organização do conhe
 ## 🔍 Auditoria e Diagnósticos (20_Audit / 21_Diagnostics)
 
 ### Auditorias Recentes
-- [[20_Audit/Audit-DSW-MKT01|Audit DSW-MKT01]]: Limpeza de disco e sessões órfãs.
-- [[20_Audit/Audit-DSW-SOLUCOES-DSW01|Audit SOLUCOES-DSW01]]: Verificação de integridade de backups.
+- [[Audit-DSW-MKT01|Audit DSW-MKT01]]: Limpeza de disco e sessões órfãs.
+- [[Audit-DSW-SOLUCOES-DSW01|Audit SOLUCOES-DSW01]]: Verificação de integridade de backups.
 
 ### Diagnósticos e RCAs
-- [[21_Diagnostics/Diagnostic-DSW-MKT01|Diagnostic DSW-MKT01]]: Detalhamento técnico da exaustão de disco.
-- [[21_Diagnostics/Diagnostic-DSW-SOLUCOES-DSW01-backup|Diagnostic SOLUCOES-DSW01]]: Falha de backup por falta de espaço.
+- [[Diagnostic-DSW-MKT01|Diagnostic DSW-MKT01]]: Detalhamento técnico da exaustão de disco.
+- [[Diagnostic-DSW-SOLUCOES-DSW01-backup|Diagnostic SOLUCOES-DSW01]]: Falha de backup por falta de espaço.
 
 ## 📝 Notas e Snippets (12_Notes)
 - [[12_Notes/Operational-Snippets|Operational Snippets]]: Comandos rápidos para Postgres, WordPress e utilitários.
