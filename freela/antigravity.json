@@ -1,0 +1,20 @@
+{
+  "context_nodes": [
+    {
+      "path": ".agent/context/rules.md",
+      "description": "Regras e contexto para projetos de freelancer",
+      "recursive": true
+    },
+    {
+      "path": "../brain",
+      "description": "Base de conhecimento principal e regras de arquitetura",
+      "recursive": true
+    }
+  ],
+  "mcp_servers": {
+    "obsidian": {
+      "command": "npx",
+      "args": ["-y", "@blacksmithers/obsidian-forge-mcp", "--vault-path", "../brain"]
+    }
+  }
+}
