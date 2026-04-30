@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_Work/Apresentacao-Projeto-Infra.md",
+                "file": "30_Work/Plano-Implantacao-DevOps.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Apresentacao-Projeto-Infra"
+              "title": "Plano-Implantacao-DevOps"
             }
           }
         ]
@@ -193,10 +193,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "30_Work/Apresentacao-Projeto-Infra.md"
+                "file": "30_Work/Plano-Implantacao-DevOps.md"
               },
               "icon": "lucide-info",
-              "title": "Propriedades do arquivo Apresentacao-Projeto-Infra"
+              "title": "Propriedades do arquivo Plano-Implantacao-DevOps"
             }
           }
         ],
@@ -220,8 +220,8 @@
   },
   "active": "db4187cd5e9451fb",
   "lastOpenFiles": [
-    "30_Work/Plano-Implantacao-DevOps.md",
     "30_Work/Apresentacao-Projeto-Infra.md",
+    "30_Work/Plano-Implantacao-DevOps.md",
     "31_Gitflow/Tag-Convention.md",
     "31_Gitflow/Gitflow.md",
     "31_Gitflow/Commit-Convention.md",

@@ -64,6 +64,7 @@ Este roteiro foi estruturado para uma narrativa convincente, do problema à solu
 - **Famílias de Servidores (Gestão de Custo e Infra)**:
     - **Segregação por Unidade de Negócio**: Servidores agrupados por empresa para controle operacional e de custo.
     - **Estrutura por Grupo**: Cada "família" possui seus servidores de Homolog, Prod e Infra (Firewall).
+    - **Infraestrutura como Código (IaC)**: Uso de **Terraform** e **Ansible** para o provisionamento do Jumphost (Digital Ocean), garantindo que a infra central seja replicável e documentada via código.
     - > [!NOTE]
     - > **[INSERIR DIAGRAMA EXCALIDRAW: ARQUITETURA JUMPHOST]** - Como o Bastion centraliza a segurança e isola a produção.
 

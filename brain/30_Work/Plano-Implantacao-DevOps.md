@@ -94,12 +94,12 @@ O projeto **Ideal Plus** será o laboratório para validar:
 *Acompanhamento passo a passo do projeto.*
 
 ### 🛠️ Semana 1: Fundação & Infraestrutura Central
-- [ ] **Provisionamento VM Jumphost**: Instalação Ubuntu 22.04 LTS.
-- [ ] **Hardening Inicial**: Configuração de firewall (UFW), fail2ban e desativação de login root via SSH.
+- [ ] **IaC Provisioning (Terraform)**: Script para criar Droplet na Digital Ocean, configurar VPC e Firewall rules.
+- [ ] **Configuração Automatizada (Ansible)**: Playbook para instalação de Docker, Jenkins, Zabbix e Hardening do OS.
+- [ ] **Hardening Inicial**: Configuração de fail2ban e desativação de login root via SSH (integrado ao Ansible).
 - [ ] **Stack de Gestão**: 
-    - [ ] Instalação Docker & Docker Compose.
-    - [ ] Deploy Jenkins (Container).
-    - [ ] Deploy Zabbix & Grafana.
+    - [ ] Deploy Jenkins (Container via Ansible).
+    - [ ] Deploy Zabbix & Grafana (Container via Ansible).
     - [ ] Deploy Apache Guacamole (Portal de Acesso).
 - [ ] **Governança Bitbucket**:
     - [ ] Criação do e-mail central: `devops@idealtrends.com.br`.
