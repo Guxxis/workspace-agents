@@ -4,6 +4,21 @@
       "path": "brain/",
       "description": "Base de conhecimento principal e regras de arquitetura",
       "recursive": true
+    },
+    {
+      "path": "freela/.agent/context/",
+      "description": "Regras e persona (Julios) para projetos de freelancer",
+      "recursive": true
+    },
+    {
+      "path": "estudo/.agent/context/",
+      "description": "Regras e contexto para projetos de estudo",
+      "recursive": true
+    },
+    {
+      "path": "trabalho/.agent/context/",
+      "description": "Regras e contexto para projetos de trabalho",
+      "recursive": true
     }
   ],
   "mcp_servers": {
