@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "31_Gitflow/Gitflow.md",
+                "file": "00_Meta/Work-Index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gitflow"
+              "title": "Work-Index"
             }
           }
         ],
@@ -48,10 +48,14 @@
             "id": "b28b011872eb4645",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Visualização em gráfico"
+              "type": "markdown",
+              "state": {
+                "file": "21_Diagnostics/Diagnostic-DSW-VESTACP01.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Diagnostic-DSW-VESTACP01"
             }
           }
         ]
@@ -204,10 +208,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "31_Gitflow/Gitflow.md"
+                "file": "21_Diagnostics/Diagnostic-DSW-VESTACP01.md"
               },
               "icon": "lucide-info",
-              "title": "Propriedades do arquivo Gitflow"
+              "title": "Propriedades do arquivo Diagnostic-DSW-VESTACP01"
             }
           }
         ],
@@ -229,10 +233,19 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "1186231cf2defbe0",
+  "active": "b28b011872eb4645",
   "lastOpenFiles": [
-    "31_Gitflow/Commit-Convention.md",
+    "30_Work/Infraestructure.md",
+    "30_Work/Ferramentas.md",
+    "30_Work/Deploy.md",
+    "21_Diagnostics/Diagnostic-DSW-VESTACP01.md",
     "31_Gitflow/Bitbucket-Standards.md",
+    "12_Notes/Operational-Snippets.md",
+    "00_Meta/Work-Index.md",
+    "31_Gitflow/Gitflow.md",
+    "12_Notes/bitbucket-pipelines.md",
+    "90_Templates/Bitbucket-Pipelines-Deploy.md",
+    "31_Gitflow/Commit-Convention.md",
     "00_Meta/Brain-Refresh.md",
     "21_Diagnostics/Diagnostic-DSW-SOLUCOES-DSW01-backup.md",
     "21_Diagnostics/Diagnostic-DSW-MKT01.md",
@@ -241,25 +254,16 @@
     "20_Audit/Audit-DSW-SOLUCOES-DSW01.md",
     "20_Audit",
     "31_Gitflow/Tag-Convention.md",
-    "31_Gitflow/Gitflow.md",
     "31_Gitflow",
     "30_Work/Bitbucket-Standards.md",
     "30_Work/Backup-Policy.md",
     "90_Templates/Template-RCA-PostMortem.md",
     "00_Meta/System-Instructions.md",
-    "00_Meta/Work-Index.md",
     "30_Work/Profile-Config.md",
     "90_Templates/Jenkinsfile.md",
     "90_Templates/Template-Auditoria-Servidor.md",
-    "30_Work/Infraestructure.md",
     "30_Work/Gitflow.md",
-    "30_Work/Ferramentas.md",
-    "30_Work/Deploy.md",
     "30_Work/Commit-Convention.md",
-    "90_Templates/output-modelo-fluxo.md",
-    "10_Daily/personal-notion-context-bd.md",
-    "90_Templates/input-modelo-fluxo.md",
-    "90_Templates/Bitbucket-Pipelines-Deploy.md",
     "90_Templates/Jenkinsfile.template",
     "32_Diagnostics",
     "31_Audit",

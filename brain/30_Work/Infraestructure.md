@@ -7,11 +7,10 @@ type: work
 
 ## HUB de Repositórios
 
-- Fornecedor: Bitbucket
-- Modelo: Gitflow
-- Repositorios: 
-- Conventional Commits: 
-- Tags: 
+- Fornecedor: **Bitbucket** (veja [[31_Gitflow/Bitbucket-Standards|Standards]])
+- Modelo: **Gitflow** (veja [[31_Gitflow/Gitflow|Documentação]])
+- Conventional Commits: **Padronizado** (veja [[31_Gitflow/Commit-Convention|Guia]])
+- Tags: **Automáticas** (veja [[31_Gitflow/Tag-Convention|Padrão]])
 
 ## M3
 

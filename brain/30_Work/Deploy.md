@@ -6,17 +6,7 @@ type: work
 
 # Padrões de Deploy de Sistemas
 
-Este arquivo padroniza como deve ser feito o deploy e a configuração inicial de sistemas com base em cada stack listada em `Stacks-Default.md`.
-
-## 1. Deploy Stack Principal (Laravel / PHP)
-**Fluxo Básico (Servidores M3 / HestiaCP / VestaCP):**
-1. Clonar repositório dentro do diretório do domínio ou usar actions de FTP.
-2. Ajustar `Custom Document Root` no painel do domínio para apontar para a pasta `public/` do Laravel.
----
-
-# Padrões de Deploy de Sistemas
-
-Este arquivo padroniza como deve ser feito o deploy e a configuração inicial de sistemas com base em cada stack listada em `Stacks-Default.md`.
+Este arquivo padroniza como deve ser feito o deploy e a configuração inicial de sistemas com base em cada stack listada em [[30_Work/Stacks-Default|Stacks-Default]].
 
 ## 1. Deploy Stack Principal (Laravel / PHP)
 **Fluxo Básico (Servidores M3 / HestiaCP / VestaCP):**

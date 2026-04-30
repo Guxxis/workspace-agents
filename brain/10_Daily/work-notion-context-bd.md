@@ -26,7 +26,15 @@ Este arquivo serve como base de dados para o histórico de tarefas, decisões e 
 *Última sincronização completa: 13/04/2026*
 
 - **Otimização de Servidor VESTACP01:**
-  - **Status:** Triagem (Criado em 24/04/26).
+  - **Status:** ✅ Concluído (29/04/26).
   - **IP:** 192.168.3.20.
-  - **Detalhes:** Identificado gargalo de CPU causado por elevado número de leituras no banco de dados no sistema de cookies da doutores.
-  - **Próximos Passos:** Analisar queries e otimizar sistema de cookies.
+  - **Resultados:** CPU caiu de 700% para 10-12%. Queries em milissegundos.
+  - **Dados:** 17M de linhas (4.6GB). Identificados 13.8M de registros > 180 dias.
+  - **Próximos Passos:** Agendar purga de dados legados (> 180 dias).
+  - **Documentação:** [[Diagnostic-DSW-VESTACP01]]
+
+---
+- **Diagnóstico VESTACP01:**
+  - **Ação:** Formalização e registro do diagnóstico de sobrecarga de CPU MySQL.
+  - **Resultado:** Diagnosticado problema de índice na tabela `cookies`. Formalizado em [[Diagnostic-DSW-VESTACP01]].
+  - **Status:** Finalizado.

@@ -48,8 +48,8 @@ As branches devem seguir rigorosamente a nomenclatura abaixo para garantir a int
 
 ## 3. Padrões Complementares
 
--   **Commits**: Veja o arquivo [[31_Gitflow/Commit-Convention|Commit-Convention.md]].
--   **Tags**: Veja o arquivo [[31_Gitflow/Tag-Convention|Tag-Convention.md]].
+-   **Commits**: Veja o arquivo [[31_Gitflow/Commit-Convention|Commit Convention]].
+-   **Tags**: Veja o arquivo [[31_Gitflow/Tag-Convention|Tag Convention]].
 
 ## 4. Comandos Úteis
 

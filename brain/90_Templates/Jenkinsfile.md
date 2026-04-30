@@ -1,3 +1,8 @@
+---
+tags: [template, jenkins, pipelines, groovy]
+description: Modelo base de Jenkinsfile para pipelines de CI/CD com múltiplos estágios (Staging/Prod).
+type: template
+---
 pipeline {
     agent any
 

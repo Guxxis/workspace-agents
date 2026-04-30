@@ -1,3 +1,8 @@
+---
+tags: [template, bitbucket, pipelines, deploy]
+description: Configuração de Bitbucket Pipelines e script de deploy para automação de CI/CD.
+type: template
+---
 # Template: Bitbucket Pipelines & Deploy Script
 
 Este arquivo contém a configuração do `bitbucket-pipelines.yml` e do script `deploy.sh` utilizados no projeto `infra.idealtrends.io`.
