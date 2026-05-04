@@ -4,15 +4,16 @@ description: Plano de implantação completo para a nova infraestrutura DevOps.
 type: work
 ---
 
-# 🚀 Plano de Implantação: CI/CD, Jumphost e Padronização Infra
+# 🚀 Plano de Implantação: Hub de Automação CI/CD e Padronização Infra
 
 Este documento detalha a estratégia para organizar e profissionalizar a estrutura de trabalho, implementando padrões de mercado e automação robusta.
 
 ## 📋 Objetivos Principais
 - **Padronização**: Organizar Jira e Bitbucket sob uma governança clara.
-- **Segurança**: Centralizar acessos via Jumphost (Bastion).
+- **Segurança & Orquestração**: Centralizar a automação no **Hub de Automação (DevOps Toolkit)**.
 - **Automação**: Implementar pipelines CI/CD com Jenkins para Homologação e Produção.
-- **Observabilidade**: Centralizar métricas com Grafana.
+- **Observabilidade**: Centralizar métricas com Grafana (Cloud e Local).
+- **Resiliência**: Implementar ciclo de Backup/Rollback automático em cada deploy de produção.
 - **Segregação**: Organizar servidores por "Família" ou Grupo.
 
 ---
@@ -37,12 +38,12 @@ Este documento detalha a estratégia para organizar e profissionalizar a estrutu
 
 Abaixo, a lista de pontos críticos que serão validados e implementados após aprovação:
 
-### 2.1. Infraestrutura e Acessos
-- [ ] **Configuração do Servidor (Jumphost)**: Instalação do OS, Hardening e firewall.
-- [ ] **Acesso Centralizado (Guacamole)**: Implementação do Guacamole como portal único de acesso a hosts.
-- [ ] **Revogação de Privilégios**: Remover acessos root diretos; implementar sudo com auditoria.
+### 2.1. Infraestrutura e Acessos (Hub DevOps)
+- [ ] **Configuração da Central (DevOps Toolkit)**: Instalação do OS (Digital Ocean), Hardening e firewall via Terraform/Ansible.
+- [ ] **Acesso Administrativo**: Garantir acesso seguro ao Hub apenas para o time de DevOps.
+- [ ] **Revogação de Privilégios**: Remover acessos root diretos nos servidores de aplicação; implementar sudo com auditoria.
 - [ ] **Proteção de Homologação**: Configurar **htpasswd** em todos os ambientes de homologação.
-- [ ] **Organização de SSHs**: Padronização e centralização de chaves no Bitbucket (Access Keys).
+- [ ] **Organização de SSHs**: Padronização e centralização de chaves no Bitbucket e no Hub DevOps.
 - [ ] **Separação por Famílias**: Segregação física/lógica de Prod e Homolog.
 
 ### 2.2. Ferramentas (Jenkins, Grafana & Zabbix)
@@ -87,6 +88,17 @@ O projeto **Ideal Plus** será o laboratório para validar:
 1. **Migração do Código**: De local para Bitbucket (se necessário).
 2. **Setup de Ambientes**: Criar Homolog (com htpasswd) e Prod segregados.
 3. **Pipeline**: Jenkinsfile rodando testes e deploy automático.
+4. **Ciclo de Rollback**: Validar a reversão de versão em < 60 segundos.
+
+---
+
+## 🔄 Estratégia de Backup & Rollback (Produção)
+
+Para garantir a continuidade do negócio, todo deploy em produção seguirá o fluxo de segurança:
+1. **Snapshot Pré-Deploy**: Dump automático do Banco de Dados e backup dos arquivos atuais.
+2. **Atomic Symlink**: Deploy em pastas datadas; o servidor aponta apenas para a versão estável.
+3. **Health Check Post-Deploy**: Se o sistema não responder 200 OK após o deploy, o rollback é automático.
+4. **Manual Trigger**: Botão no Jenkins para "Rollback para Versão Anterior" acessível ao DevOps.
 
 ---
 
@@ -101,7 +113,7 @@ O projeto **Ideal Plus** será o laboratório para validar:
 - [ ] **Hardening Inicial**: Configuração de fail2ban e desativação de login root via SSH (integrado ao Ansible).
 - [ ] **Stack de Gestão**: 
     - [ ] Deploy Jenkins (Container via Ansible).
-    - [ ] Deploy Apache Guacamole (Portal de Acesso).
+    - [ ] Deploy do Hub de Operações (Toolkit para Ansible e Scripts).
 
 #### 🧪 Semana 3: O Piloto (PoC - Ideal Plus)
 - [ ] **Setup do Repositório**: Aplicar nomenclatura `deploy.idealplus.idealtrends.io`.

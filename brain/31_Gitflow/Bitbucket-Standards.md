@@ -11,12 +11,12 @@ Este documento define os padrões de governança para o workspace do Bitbucket, 
 ## 1. Nomenclatura de Projetos (Groups)
 Os projetos no Bitbucket devem ser usados para agrupar repositórios por unidade de negócio ou squad.
 
-| Projeto | Key | Descrição |
-| :--- | :--- | :--- |
-| **Ince** | `INCE` | Projetos relacionados ao ecossistema Ince. |
-| **Soin** | `SOIN` | Projetos relacionados ao ecossistema Soin. |
-| **Infrastructure** | `INFRA` | Repositórios de IaC, scripts de automação e ferramentas DevOps. |
-| **Labs** | `LABS` | Projetos em fase de prova de conceito (PoC). |
+| Projeto                  | Key     | Descrição                                                       |
+| :----------------------- | :------ | :-------------------------------------------------------------- |
+| **InfraCentral**         | `INCE`  | Projetos relacionados ao ecossistema Ince.                      |
+| **Soluções Industriais** | `SOIN`  | Projetos relacionados ao ecossistema Soin.                      |
+| **Infrastructure**       | `INFRA` | Repositórios de IaC, scripts de automação e ferramentas DevOps. |
+| **Labs**                 | `LABS`  | Projetos em fase de prova de conceito (PoC).                    |
 
 ## 2. Nomenclatura de Repositórios
 Todos os repositórios devem seguir o padrão **kebab-case** (letras minúsculas separadas por hífen).

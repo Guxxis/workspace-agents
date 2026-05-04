@@ -25,11 +25,11 @@ Este roteiro foi estruturado para uma narrativa convincente, do problema à solu
 
 - **Proposta de Solução (O Remédio)**:
     - **Padronização de Stack**: Laravel para core/sistemas e Typescript para PoCs e IA.
-    - **Automatização (Jenkins)**: Fim do deploy manual; pipelines cuidam da entrega com segurança.
-    - **Governança de Acessos**: Revogação de acessos root; centralização via **Guacamole** e proteção de homologação com **htpasswd** para acesso via web.
+    - **Central de Automação (Jenkins)**: Criação de um **Toolkit de DevOps** isolado para orquestrar deploys sem intervenção manual nos servidores.
+    - **Governança de Acessos**: Manutenção do acesso via **Guacamole (M3)** para devs com auditoria, mas revogação de acessos root diretos; proteção de homologação com **htpasswd**.
     - **Sincronia Jira-Bitbucket**: Vínculo obrigatório para rastreabilidade de cada linha de código.
     - **Integração DevOps no Ciclo de Vida**: O DevOps deixa de ser um "apagador de incêndio" e vira parte do fluxo. Solicitações de ambiente via Jira, com prazos e responsáveis claros.
-	- **Cultura de Commit Antecipado**: Workshop para mudar o mindset: versionamento desde o primeiro dia.
+    - **Cultura de Commit Antecipado**: Workshop para mudar o mindset: versionamento desde o primeiro dia.
 
 - **Ganhos Esperados (Cenário Pós-Melhoria)**:
     - **Rastreabilidade Total**: Saber qual card do Jira gerou qual commit e quando foi para o ar.
@@ -62,12 +62,12 @@ Este roteiro foi estruturado para uma narrativa convincente, do problema à solu
     - **Release/Hotfix**: Testes E2E, geração de tags.
     - **Merge para Produção**: deploy automático em produção com sincronia reversa para garantir a estabilidade.
 
-- **Famílias de Servidores (Gestão de Custo e Infra)**:
-    - **Segregação por Unidade de Negócio**: Servidores agrupados por empresa para controle operacional e de custo.
-    - **Estrutura por Grupo**: Cada "família" possui seus servidores de Homolog, Prod e Infra (Firewall).
-    - **Infraestrutura como Código (IaC)**: Uso de **Terraform** e **Ansible** para o provisionamento do Jumphost (Digital Ocean), garantindo que a infra central seja replicável e documentada via código.
+- **Central de Operações (DevOps Toolkit)**:
+    - **Isolamento de Funções**: Diferente do Jumphost de acesso (Guacamole), criaremos um **Hub de Automação** exclusivo para o DevOps.
+    - **Ferramental**: Servidor centralizado para execução de CI/CD (Jenkins), Captura de métricas (Zabbix/Grafana) e Gerenciamento de Configuração (Ansible).
+    - **Infraestrutura como Código (IaC)**: Uso de **Terraform** e **Ansible** para provisionamento rápido e replicável deste Hub na Digital Ocean.
     - > [!NOTE]
-    - > **[INSERIR DIAGRAMA EXCALIDRAW: ARQUITETURA JUMPHOST]** - Como o Bastion centraliza a segurança e isola a produção.
+    - > **[INSERIR DIAGRAMA EXCALIDRAW: ARQUITETURA HUB DEVOPS]** - Como a Central de DevOps se comunica com os servidores das "Famílias".
 
 - **Scaffolding (Onboarding)**:
     - **Questionário Padrão**: Definição automática de stack, repositório e pipeline no início de cada projeto.
@@ -85,7 +85,7 @@ Este roteiro foi estruturado para uma narrativa convincente, do problema à solu
 *Quanto custa a profissionalização e qual o retorno (ROI).*
 
 - **Infraestrutura de Servidores (Cloud/Local)**:
-    - **Servidor Central (Jumphost/Jenkins)**: 01 Instância (ex: 4 vCPU, 8GB RAM, 100GB SSD). Custo estimado baixo (aprox. $40-$60/mês se for cloud).
+    - **Hub de Automação (DevOps Toolkit)**: 01 Instância (ex: 4 vCPU, 8GB RAM, 100GB SSD). Custo estimado baixo (aprox. $40-$60/mês se for cloud).
     - **Observabilidade**: Sem custo de licença (Open Source).
 - **Ferramentas (Software)**:
     - **Custo Zero em Licenciamento**: Jenkins (Automação), Grafana/Zabbix (Monitoramento), Guacamole (Segurança), htpasswd (Privacidade).
@@ -101,22 +101,22 @@ Este roteiro foi estruturado para uma narrativa convincente, do problema à solu
 
 | Critério            | Cenário Atual (Caos)      | Novo Padrão (DevOps)           |
 | :------------------ | :------------------------ | :----------------------------- |
-| **Segurança**       | Devs com acesso Root      | Acesso via Jumphost (Auditado) |
+| **Segurança**       | Acessos root desorganizados | Acesso Dev (Guacamole) + Hub DevOps (IaC) |
 | **Versionamento**   | Código local (risco alto) | Bitbucket desde o Dia 1        |
-| **Deploy**          | Manual (Indeterminado)    | Automático (< 2 min)           |
-| **Ambientes**       | Misturados / Confusos     | Segregados (Homolog/Prod)      |
-| **Visibilidade** | Nenhuma / Caixa Preta | Métricas Cloud e Dashboards |
+| **Deploy**          | Manual (Indeterminado)    | Automático via Hub DevOps      |
+| **Ambientes**       | Misturados / Confusos     | Segregados e Padronizados      |
+| **Visibilidade**    | Nenhuma / Caixa Preta     | Métricas Cloud e Dashboards    |
 | **Rastreabilidade** | "Quem subiu o que?"       | Link Jira-Commit Automático    |
 
 ## 5. Plano de Implantação (Roadmap)
 *O cronograma para a transformação digital.*
 
 - **Mês 1: Fundação e Entrega de Valor Tangível (PoC)**:
-    - **Setup Inicial:** Criação do servidor Jumphost na Digital Ocean e esteira CI/CD (Jenkins). (Monitoramento coberto nativamente pela cloud).
+    - **Setup Inicial:** Criação do **Hub de Automação** na Digital Ocean (Terraform/Ansible) e esteira CI/CD (Jenkins).
     - **Piloto (Ideal Plus):** Migração de código, segregação de ambientes e automação de deploy.
     - **Workshop Focado:** Alinhamento técnico (Gitflow, Commits, Pipeline) estritamente com os devs envolvidos na PoC.
 - **Mês 2: Refinamento, Expansão e Cultura**:
-    - **Governança:** Reorganização completa do Bitbucket, Jira e acessos (Guacamole).
+    - **Governança:** Reorganização completa do Bitbucket, Jira e acessos (via Hub DevOps).
     - **Observabilidade:** Implantação de monitoramento avançado e alertas customizados (Zabbix/Grafana/Slack).
     - **Treinamento e Rollout:** Workshop geral para todos os Devs e POs do time, seguido do rollout dos padrões para os demais projetos.
 

@@ -1,7 +1,7 @@
 ---
 tags: [notion, project-status, work-history]
 description: Base de dados para histórico de tarefas, decisões e status de projetos ativos no Notion.
-type: daily
+type: work
 ---
 # Histórico e Status de Projetos Ativos - Notion Trabalho
 
