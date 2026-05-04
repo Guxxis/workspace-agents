@@ -90,23 +90,20 @@ O projeto **Ideal Plus** será o laboratório para validar:
 
 ---
 
-## 📅 Cronograma & Checklist de Execução
-*Acompanhamento passo a passo do projeto.*
+## 📅 Cronograma & Checklist de Execução (2 Meses)
+*Acompanhamento passo a passo do projeto, focado na entrega rápida de valor.*
 
-### 🛠️ Semana 1: Fundação & Infraestrutura Central
+### 🚀 Mês 1: Infraestrutura Core e Prova de Conceito (PoC)
+
+#### 🛠️ Semanas 1 e 2: Fundação & Setup Inicial
 - [ ] **IaC Provisioning (Terraform)**: Script para criar Droplet na Digital Ocean, configurar VPC e Firewall rules.
-- [ ] **Configuração Automatizada (Ansible)**: Playbook para instalação de Docker, Jenkins, Zabbix e Hardening do OS.
+- [ ] **Configuração Automatizada (Ansible)**: Playbook para instalação de Docker, Jenkins e Hardening do OS *(Nota: Monitoramento inicial será via agente nativo da Digital Ocean)*.
 - [ ] **Hardening Inicial**: Configuração de fail2ban e desativação de login root via SSH (integrado ao Ansible).
 - [ ] **Stack de Gestão**: 
     - [ ] Deploy Jenkins (Container via Ansible).
-    - [ ] Deploy Zabbix & Grafana (Container via Ansible).
     - [ ] Deploy Apache Guacamole (Portal de Acesso).
-- [ ] **Governança Bitbucket**:
-    - [ ] Criação do e-mail central: `devops@idealtrends.com.br`.
-    - [ ] Migração de SSH keys de servidores para a conta central.
-    - [ ] Limpeza de chaves SSH legadas do Workspace.
 
-### 🧪 Semana 2: PoC & Pipeline (Projeto Ideal Plus)
+#### 🧪 Semana 3: O Piloto (PoC - Ideal Plus)
 - [ ] **Setup do Repositório**: Aplicar nomenclatura `deploy.idealplus.idealtrends.io`.
 - [ ] **Gitflow Enforcement**: Bloqueio de branches `main` e `develop` no Bitbucket.
 - [ ] **Jenkins Pipeline**:
@@ -115,23 +112,39 @@ O projeto **Ideal Plus** será o laboratório para validar:
     - [ ] Automação de Deploy em Homolog (via Develop merge).
 - [ ] **Segurança de Homolog**: Implementação de `htpasswd` no servidor de destino.
 
-### 🔐 Semana 3: Padronização & Integração Jira
+#### 🎓 Semana 4: Validação & Workshop Intermediário
+- [ ] **Workshop Focado (PoC)**:
+    - [ ] Alinhamento prático sobre **Gitflow** e **Commits** estritamente com os devs envolvidos na PoC.
+    - [ ] Demonstração do fluxo de aprovação de PR e acompanhamento do Pipeline.
+- [ ] **Ajustes Finos**: Refinamento da esteira CI/CD baseado nos primeiros feedbacks de uso real.
+
+---
+
+### 📈 Mês 2: Governança, Observabilidade e Expansão
+
+#### 🔐 Semanas 5 e 6: Padronização & Integração Jira
+- [ ] **Governança Bitbucket**:
+    - [ ] Criação do e-mail central: `devops@idealtrends.com.br`.
+    - [ ] Migração de SSH keys de servidores para a conta central.
+    - [ ] Limpeza de chaves SSH legadas do Workspace.
 - [ ] **Vínculo Jira-Bitbucket**: Configurar aplicação de link para que commits com ID (ex: `INCE-123`) apareçam nos cards.
-- [ ] **Famílias de Servidores**:
-    - [ ] Mapeamento e inventário de servidores por "Empresa".
-    - [ ] Padronização de nomes de hosts e organização no inventário.
 - [ ] **Scaffolding de Projetos**:
     - [ ] Criação de repositório "Template Laravel" com Docker, CI/CD e Padrões de Commit inclusos.
     - [ ] Documentação do processo de solicitação de novo projeto.
 
-### 🎓 Semana 4: Treinamento & Rollout
-- [ ] **Workshop de Equipe**:
-    - [ ] Treinamento em **Conventional Commits** e **Gitflow**.
-    - [ ] Demonstração do fluxo de PR e aprovação técnica.
-- [ ] **Dashboards de Observabilidade**:
-    - [ ] Configuração de painéis no Grafana para saúde dos servidores.
-    - [ ] Alertas de falha de deploy no Slack/Discord.
-- [ ] **Rollout Geral**: Início da migração gradativa dos demais sistemas para o novo padrão.
+#### 📊 Semana 7: Observabilidade Avançada & Famílias
+- [ ] **Famílias de Servidores**:
+    - [ ] Mapeamento e inventário de servidores por "Empresa".
+    - [ ] Padronização de nomes de hosts e organização no inventário.
+- [ ] **Monitoramento Adicional (Opcional)**:
+    - [ ] Deploy Zabbix & Grafana para métricas avançadas que a Digital Ocean não cobre.
+    - [ ] Configuração de Alertas de falha de deploy no Slack/Discord.
+
+#### 🌐 Semana 8: Treinamento Geral & Rollout
+- [ ] **Workshop Geral**:
+    - [ ] Apresentação final para **todos os Devs e POs do time**.
+    - [ ] Apresentação dos resultados e ganhos da PoC.
+- [ ] **Rollout Geral**: Início da migração gradativa dos demais sistemas (MPI, Busca Cliente, etc.) para o novo padrão.
 
 ---
 > [!IMPORTANT]
@@ -139,4 +152,4 @@ O projeto **Ideal Plus** será o laboratório para validar:
 
 ---
 > [!NOTE]
-> Este plano foi atualizado com a inclusão do Zabbix e o projeto Ideal Plus como PoC em 30/04.
+> Este plano foi atualizado para uma janela de 2 meses, focando o 1º mês na PoC e Infra Base, deixando Governança e Observabilidade Avançada para o 2º mês.

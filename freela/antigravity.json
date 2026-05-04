@@ -14,7 +14,7 @@
   "mcp_servers": {
     "obsidian": {
       "command": "npx",
-      "args": ["-y", "@blacksmithers/obsidian-forge-mcp", "--vault-path", "../brain"]
+      "args": ["-y", "@blacksmithers/obsidian-forge-mcp", "../brain"]
     }
   }
 }

@@ -1,0 +1,55 @@
+---
+- name: Update apt cache
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: Install Fail2Ban and UFW
+  apt:
+    name:
+      - fail2ban
+      - ufw
+      - curl
+    state: present
+
+- name: Configure UFW - Default Deny
+  ufw:
+    state: enabled
+    policy: deny
+    direction: incoming
+
+- name: Configure UFW - Allow Outgoing
+  ufw:
+    policy: allow
+    direction: outgoing
+
+- name: Configure UFW - Allow SSH from Anywhere (Temporary for Setup)
+  ufw:
+    rule: allow
+    port: '22'
+    proto: tcp
+# Nota: Após configurar o Tailscale, a porta 22 deve ser restrita apenas à interface tailscale0
+# ex: ufw allow in on tailscale0 to any port 22
+
+- name: Install Tailscale
+  shell: curl -fsSL https://tailscale.com/install.sh | sh
+  args:
+    creates: /usr/bin/tailscale
+
+- name: Authenticate Tailscale (if token provided)
+  command: tailscale up --authkey={{ tailscale_auth_key }} --ssh
+  when: tailscale_auth_key != "SUA_CHAVE_AUTH_AQUI"
+
+- name: Secure SSHD Config - Disable Password Auth
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: "^#?PasswordAuthentication"
+    line: "PasswordAuthentication no"
+  notify: restart ssh
+
+- name: Secure SSHD Config - Disable Root Login
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: "^#?PermitRootLogin"
+    line: "PermitRootLogin prohibit-password"
+  notify: restart ssh

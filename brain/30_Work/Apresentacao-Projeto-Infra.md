@@ -29,13 +29,13 @@ Este roteiro foi estruturado para uma narrativa convincente, do problema à solu
     - **Governança de Acessos**: Revogação de acessos root; centralização via **Guacamole** e proteção de homologação com **htpasswd** para acesso via web.
     - **Sincronia Jira-Bitbucket**: Vínculo obrigatório para rastreabilidade de cada linha de código.
     - **Integração DevOps no Ciclo de Vida**: O DevOps deixa de ser um "apagador de incêndio" e vira parte do fluxo. Solicitações de ambiente via Jira, com prazos e responsáveis claros.
-- **Cultura de Commit Antecipado**: Workshop para mudar o mindset: versionamento desde o primeiro dia.
+	- **Cultura de Commit Antecipado**: Workshop para mudar o mindset: versionamento desde o primeiro dia.
 
 - **Ganhos Esperados (Cenário Pós-Melhoria)**:
     - **Rastreabilidade Total**: Saber qual card do Jira gerou qual commit e quando foi para o ar.
     - **Velocidade e Qualidade**: Testes automatizados e deploys rápidos reduzem o tempo de entrega e bugs em produção.
     - **Organização Escalável**: Facilidade para configurar novos projetos e ambientes em minutos, não dias.
-- **Previsibilidade Total**: Fim das surpresas na entrega. A infraestrutura é planejada e configurada junto com o início do desenvolvimento.
+	- **Previsibilidade Total**: Fim das surpresas na entrega. A infraestrutura é planejada e configurada junto com o início do desenvolvimento.
 
 ## 2. Padronização e Organização
 *O "Como" vamos estruturar a base - Eficiência através da Norma.*
@@ -59,7 +59,8 @@ Este roteiro foi estruturado para uma narrativa convincente, do problema à solu
 - **CI/CD (Automação de Esteira)**:
     - **PR para Develop**: Disparo automático de testes unitários e linters (garantia de qualidade antes do merge).
     - **Merge para Develop**: Deploy imediato em Homologação.
-    - **Release/Produção**: Testes E2E, geração de tags e deploy automático em produção com sincronia reversa para garantir a estabilidade.
+    - **Release/Hotfix**: Testes E2E, geração de tags.
+    - **Merge para Produção**: deploy automático em produção com sincronia reversa para garantir a estabilidade.
 
 - **Famílias de Servidores (Gestão de Custo e Infra)**:
     - **Segregação por Unidade de Negócio**: Servidores agrupados por empresa para controle operacional e de custo.
@@ -84,13 +85,13 @@ Este roteiro foi estruturado para uma narrativa convincente, do problema à solu
 *Quanto custa a profissionalização e qual o retorno (ROI).*
 
 - **Infraestrutura de Servidores (Cloud/Local)**:
-    - **Servidor Central (Jumphost/Jenkins)**: 01 Instância (ex: 4 vCPU, 8GB RAM, 100GB SSD). Custo estimado baixo (aprox. $20-$40/mês se for cloud).
+    - **Servidor Central (Jumphost/Jenkins)**: 01 Instância (ex: 4 vCPU, 8GB RAM, 100GB SSD). Custo estimado baixo (aprox. $40-$60/mês se for cloud).
     - **Observabilidade**: Sem custo de licença (Open Source).
 - **Ferramentas (Software)**:
     - **Custo Zero em Licenciamento**: Jenkins (Automação), Grafana/Zabbix (Monitoramento), Guacamole (Segurança), htpasswd (Privacidade).
 - **Recurso Humano & Tempo**:
-    - **Tempo de Implantação**: 4 semanas de dedicação focada para o setup inicial e PoC.
-    - **Treinamentos**: 02 Workshops internos (2h cada) para nivelamento técnico do time.
+    - **Tempo de Implantação**: 2 meses de dedicação (Mês 1 para PoC e valor tangível; Mês 2 para expansão e treinamento geral).
+    - **Treinamentos**: 01 Workshop focado com a equipe da PoC + 01 Workshop Geral (Devs e POs).
 - **ROI (Retorno sobre Investimento)**:
     - **Redução de Downtime**: Monitoramento proativo evita quedas e perda de vendas.
     - **Eficiência Operacional**: Deploys em segundos, não minutos/horas.
@@ -98,34 +99,26 @@ Este roteiro foi estruturado para uma narrativa convincente, do problema à solu
 
 ### 📊 Comparativo: O Salto de Qualidade
 
-| Critério | Cenário Atual (Caos) | Novo Padrão (DevOps) |
-| :--- | :--- | :--- |
-| **Segurança** | Devs com acesso Root | Acesso via Jumphost (Auditado) |
-| **Versionamento** | Código local (risco alto) | Bitbucket desde o Dia 1 |
-| **Deploy** | Manual (15-30 min) | Automático (< 2 min) |
-| **Ambientes** | Misturados / Confusos | Segregados (Homolog/Prod) |
-| **Visibilidade** | Nenhuma / Caixa Preta | Dashboards Zabbix/Grafana |
-| **Rastreabilidade** | "Quem subiu o que?" | Link Jira-Commit Automático |
+| Critério            | Cenário Atual (Caos)      | Novo Padrão (DevOps)           |
+| :------------------ | :------------------------ | :----------------------------- |
+| **Segurança**       | Devs com acesso Root      | Acesso via Jumphost (Auditado) |
+| **Versionamento**   | Código local (risco alto) | Bitbucket desde o Dia 1        |
+| **Deploy**          | Manual (Indeterminado)    | Automático (< 2 min)           |
+| **Ambientes**       | Misturados / Confusos     | Segregados (Homolog/Prod)      |
+| **Visibilidade** | Nenhuma / Caixa Preta | Métricas Cloud e Dashboards |
+| **Rastreabilidade** | "Quem subiu o que?"       | Link Jira-Commit Automático    |
 
 ## 5. Plano de Implantação (Roadmap)
 *O cronograma para a transformação digital.*
 
-- **Semana 1: Fundação & Governança**:
-    - Setup do servidor Jumphost e Hardening.
-    - Instalação do Jenkins, Zabbix e Grafana.
-    - Organização de Acessos e Grupos no Bitbucket/Jira.
-- **Semana 2: O Piloto (PoC - Ideal Plus)**:
-    - Migração e padronização do primeiro projeto real.
-    - Implementação da Pipeline Jenkinsfile (Build -> Test -> Homolog -> Prod).
-    - Validação do fluxo de Gitflow com o time.
-- **Semana 3: Expansão & Segurança**:
-    - Configuração de SSHs centralizados e revogação de acessos diretos.
-    - Implementação do Guacamole e proteção htpasswd global.
-    - Configuração de Alertas no Slack/Discord.
-- **Semana 4: Consolidação & Treinamento**:
-    - Workshops de cultura de Commit e Gitflow.
-    - Rollout da padronização para os demais repositórios.
-    - Dashboards finais de monitoramento.
+- **Mês 1: Fundação e Entrega de Valor Tangível (PoC)**:
+    - **Setup Inicial:** Criação do servidor Jumphost na Digital Ocean e esteira CI/CD (Jenkins). (Monitoramento coberto nativamente pela cloud).
+    - **Piloto (Ideal Plus):** Migração de código, segregação de ambientes e automação de deploy.
+    - **Workshop Focado:** Alinhamento técnico (Gitflow, Commits, Pipeline) estritamente com os devs envolvidos na PoC.
+- **Mês 2: Refinamento, Expansão e Cultura**:
+    - **Governança:** Reorganização completa do Bitbucket, Jira e acessos (Guacamole).
+    - **Observabilidade:** Implantação de monitoramento avançado e alertas customizados (Zabbix/Grafana/Slack).
+    - **Treinamento e Rollout:** Workshop geral para todos os Devs e POs do time, seguido do rollout dos padrões para os demais projetos.
 
 ---
 > [!TIP]

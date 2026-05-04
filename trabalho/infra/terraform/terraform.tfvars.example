@@ -1,0 +1,7 @@
+# Renomeie este arquivo para terraform.tfvars e preencha com seus dados.
+# ATENÇÃO: NUNCA commite o arquivo terraform.tfvars com os tokens reais!
+
+do_token   = "dop_v1_SEU_TOKEN_AQUI"
+ssh_key_id = "ID_OU_FINGERPRINT_DA_SUA_CHAVE_NA_DO"
+region     = "nyc3"
+droplet_size = "s-2vcpu-4gb"

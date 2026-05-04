@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_Work/Plano-Implantacao-DevOps.md",
+                "file": "30_Work/Gamma-Apresentacao-Infra.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Plano-Implantacao-DevOps"
+              "title": "Gamma-Apresentacao-Infra"
             }
           }
         ]
@@ -35,12 +35,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_Work/Plano-Implantacao-DevOps.md",
-                "mode": "source",
+                "file": "30_Work/Apresentacao-Projeto-Infra.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Plano-Implantacao-DevOps"
+              "title": "Apresentacao-Projeto-Infra"
             }
           }
         ]
@@ -100,7 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 373.5
   },
   "right": {
     "id": "5078bf26a173a71e",
@@ -221,7 +221,9 @@
   "active": "db4187cd5e9451fb",
   "lastOpenFiles": [
     "30_Work/Apresentacao-Projeto-Infra.md",
+    "30_Work/Gamma-Apresentacao-Infra.md",
     "30_Work/Plano-Implantacao-DevOps.md",
+    "30_Work/Jumphost-Hardening.md",
     "31_Gitflow/Tag-Convention.md",
     "31_Gitflow/Gitflow.md",
     "31_Gitflow/Commit-Convention.md",
@@ -249,8 +251,6 @@
     "38_Audit/Audit-DSW-SOLUCOES-DSW01.md",
     "38_Audit",
     "31_Gitflow",
-    "30_Work/Bitbucket-Standards.md",
-    "30_Work/Backup-Policy.md",
     "90_Templates/Jenkinsfile.template",
     "32_Diagnostics",
     "31_Audit",
