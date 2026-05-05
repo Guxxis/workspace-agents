@@ -39,29 +39,29 @@ Este documento detalha a estratégia para organizar e profissionalizar a estrutu
 Abaixo, a lista de pontos críticos que serão validados e implementados após aprovação:
 
 ### 2.1. Infraestrutura e Acessos (Hub DevOps)
-- [ ] **Configuração da Central (DevOps Toolkit)**: Instalação do OS (Digital Ocean), Hardening e firewall via Terraform/Ansible.
-- [ ] **Acesso Administrativo**: Garantir acesso seguro ao Hub apenas para o time de DevOps.
-- [ ] **Revogação de Privilégios**: Remover acessos root diretos nos servidores de aplicação; implementar sudo com auditoria.
-- [ ] **Proteção de Homologação**: Configurar **htpasswd** em todos os ambientes de homologação.
-- [ ] **Organização de SSHs**: Padronização e centralização de chaves no Bitbucket e no Hub DevOps.
+- [x] **Configuração da Central (DevOps Toolkit)**: Instalação do OS (Digital Ocean), Hardening e firewall via Terraform/Ansible.
+- [x] **Acesso Administrativo**: Garantir acesso seguro ao Hub apenas para o time de DevOps.
+- [x] **Revogação de Privilégios**: Remover acessos root diretos nos servidores de aplicação; implementar sudo com auditoria.
+- [x] **Proteção de Homologação**: Configurar **htpasswd** em todos os ambientes de homologação.
+- [x] **Organização de SSHs**: Padronização e centralização de chaves no Bitbucket e no Hub DevOps.
 - [ ] **Separação por Famílias**: Segregação física/lógica de Prod e Homolog.
 
 ### 2.2. Ferramentas (Jenkins, Grafana & Zabbix)
-- [ ] **Configuração do Jenkins**: Instalação via Docker, segurança (RBAC) e Nodes.
-- [ ] **Integração Jira-Bitbucket**: Garantir que cada commit apareça no card do Jira correspondente.
-- [ ] **Configuração do Zabbix & Grafana**: Monitoramento de saúde e observabilidade.
-- [ ] **Alertas**: Notificações automáticas no Slack/Discord sobre status de deploy.
+- [x] **Configuração do Jenkins**: Instalação via Docker, segurança (RBAC) e Nodes.
+- [x] **Integração Jira-Bitbucket**: Garantir que cada commit apareça no card do Jira correspondente.
+- [x] **Configuração do Zabbix & Grafana**: Monitoramento de saúde e observabilidade.
+- [x] **Alertas**: Notificações automáticas no Slack/Discord sobre status de deploy.
 
 ### 2.3. Padronização e Governança
-- [ ] **Governança de Stack**: Laravel (Core/Sistemas) e Typescript (PoCs/IA).
-- [ ] **Bitbucket Standards**: Ajuste de nomenclatura de repos e projetos por família.
-- [ ] **Commit & Tag Convention**: Workshops de **Conventional Commits** e versionamento semântico.
-- [ ] **Cultura de Versionamento**: Estabelecer obrigatoriedade de repositório desde o dia 1 do projeto.
+- [x] **Governança de Stack**: Laravel (Core/Sistemas) e Typescript (PoCs/IA).
+- [x] **Bitbucket Standards**: Ajuste de nomenclatura de repos e projetos por família.
+- [x] **Commit & Tag Convention**: Workshops de **Conventional Commits** e versionamento semântico.
+- [x] **Cultura de Versionamento**: Estabelecer obrigatoriedade de repositório desde o dia 1 do projeto.
 
 ### 2.4. Treinamento e Cultura
-- [ ] **Workshop 1**: Gitflow, Commits e Vínculo Jira-Bitbucket.
-- [ ] **Workshop 2**: Deploy via Jenkins e uso do ambiente de Homologação.
-- [ ] **Guia de Solicitação**: Processo formal para novos projetos e ambientes.
+- [x] **Workshop 1**: Gitflow, Commits e Vínculo Jira-Bitbucket.
+- [x] **Workshop 2**: Deploy via Jenkins e uso do ambiente de Homologação.
+- [x] **Guia de Solicitação**: Processo formal para novos projetos e ambientes.
 
 ---
 
@@ -108,55 +108,55 @@ Para garantir a continuidade do negócio, todo deploy em produção seguirá o f
 ### 🚀 Mês 1: Infraestrutura Core e Prova de Conceito (PoC)
 
 #### 🛠️ Semanas 1 e 2: Fundação & Setup Inicial
-- [ ] **IaC Provisioning (Terraform)**: Script para criar Droplet na Digital Ocean, configurar VPC e Firewall rules.
-- [ ] **Configuração Automatizada (Ansible)**: Playbook para instalação de Docker, Jenkins e Hardening do OS *(Nota: Monitoramento inicial será via agente nativo da Digital Ocean)*.
-- [ ] **Hardening Inicial**: Configuração de fail2ban e desativação de login root via SSH (integrado ao Ansible).
-- [ ] **Stack de Gestão**: 
-    - [ ] Deploy Jenkins (Container via Ansible).
-    - [ ] Deploy do Hub de Operações (Toolkit para Ansible e Scripts).
+- [x] **IaC Provisioning (Terraform)**: Script para criar Droplet na Digital Ocean, configurar VPC e Firewall rules.
+- [x] **Configuração Automatizada (Ansible)**: Playbook para instalação de Docker, Jenkins e Hardening do OS *(Nota: Monitoramento inicial será via agente nativo da Digital Ocean)*.
+- [x] **Hardening Inicial**: Configuração de fail2ban e desativação de login root via SSH (integrado ao Ansible).
+- [x] **Stack de Gestão**: 
+    - [x] Deploy Jenkins (Container via Ansible).
+    - [x] Deploy do Hub de Operações (Toolkit para Ansible e Scripts).
 
 #### 🧪 Semana 3: O Piloto (PoC - Ideal Plus)
-- [ ] **Setup do Repositório**: Aplicar nomenclatura `deploy.idealplus.idealtrends.io`.
-- [ ] **Gitflow Enforcement**: Bloqueio de branches `main` e `develop` no Bitbucket.
-- [ ] **Jenkins Pipeline**:
-    - [ ] Escrita do `Jenkinsfile` com estágios: Build -> Unit Tests -> Linter.
-    - [ ] Configuração de Webhooks Bitbucket -> Jenkins.
-    - [ ] Automação de Deploy em Homolog (via Develop merge).
-- [ ] **Segurança de Homolog**: Implementação de `htpasswd` no servidor de destino.
+- [x] **Setup do Repositório**: Aplicar nomenclatura `deploy.idealplus.idealtrends.io`.
+- [x] **Gitflow Enforcement**: Bloqueio de branches `main` e `develop` no Bitbucket.
+- [x] **Jenkins Pipeline**:
+    - [x] Escrita do `Jenkinsfile` com estágios: Build -> Unit Tests -> Linter.
+    - [x] Configuração de Webhooks Bitbucket -> Jenkins.
+    - [x] Automação de Deploy em Homolog (via Develop merge).
+- [x] **Segurança de Homolog**: Implementação de `htpasswd` no servidor de destino.
 
 #### 🎓 Semana 4: Validação & Workshop Intermediário
-- [ ] **Workshop Focado (PoC)**:
-    - [ ] Alinhamento prático sobre **Gitflow** e **Commits** estritamente com os devs envolvidos na PoC.
-    - [ ] Demonstração do fluxo de aprovação de PR e acompanhamento do Pipeline.
-- [ ] **Ajustes Finos**: Refinamento da esteira CI/CD baseado nos primeiros feedbacks de uso real.
+- [x] **Workshop Focado (PoC)**:
+    - [x] Alinhamento prático sobre **Gitflow** e **Commits** estritamente com os devs envolvidos na PoC.
+    - [x] Demonstração do fluxo de aprovação de PR e acompanhamento do Pipeline.
+- [x] **Ajustes Finos**: Refinamento da esteira CI/CD baseado nos primeiros feedbacks de uso real.
 
 ---
 
 ### 📈 Mês 2: Governança, Observabilidade e Expansão
 
 #### 🔐 Semanas 5 e 6: Padronização & Integração Jira
-- [ ] **Governança Bitbucket**:
-    - [ ] Criação do e-mail central: `devops@idealtrends.com.br`.
-    - [ ] Migração de SSH keys de servidores para a conta central.
-    - [ ] Limpeza de chaves SSH legadas do Workspace.
-- [ ] **Vínculo Jira-Bitbucket**: Configurar aplicação de link para que commits com ID (ex: `INCE-123`) apareçam nos cards.
-- [ ] **Scaffolding de Projetos**:
-    - [ ] Criação de repositório "Template Laravel" com Docker, CI/CD e Padrões de Commit inclusos.
-    - [ ] Documentação do processo de solicitação de novo projeto.
+- [x] **Governança Bitbucket**:
+    - [x] Criação do e-mail central: `devops@idealtrends.com.br`.
+    - [x] Migração de SSH keys de servidores para a conta central.
+    - [x] Limpeza de chaves SSH legadas do Workspace.
+- [x] **Vínculo Jira-Bitbucket**: Configurar aplicação de link para que commits com ID (ex: `INCE-123`) apareçam nos cards.
+- [x] **Scaffolding de Projetos**:
+    - [x] Criação de repositório "Template Laravel" com Docker, CI/CD e Padrões de Commit inclusos.
+    - [x] Documentação do processo de solicitação de novo projeto.
 
 #### 📊 Semana 7: Observabilidade Avançada & Famílias
-- [ ] **Famílias de Servidores**:
-    - [ ] Mapeamento e inventário de servidores por "Empresa".
-    - [ ] Padronização de nomes de hosts e organização no inventário.
-- [ ] **Monitoramento Adicional (Opcional)**:
-    - [ ] Deploy Zabbix & Grafana para métricas avançadas que a Digital Ocean não cobre.
-    - [ ] Configuração de Alertas de falha de deploy no Slack/Discord.
+- [x] **Famílias de Servidores**:
+    - [x] Mapeamento e inventário de servidores por "Empresa".
+    - [x] Padronização de nomes de hosts e organização no inventário.
+- [x] **Monitoramento Adicional (Opcional)**:
+    - [x] Deploy Zabbix & Grafana para métricas avançadas que a Digital Ocean não cobre.
+    - [x] Configuração de Alertas de falha de deploy no Slack/Discord.
 
 #### 🌐 Semana 8: Treinamento Geral & Rollout
-- [ ] **Workshop Geral**:
-    - [ ] Apresentação final para **todos os Devs e POs do time**.
-    - [ ] Apresentação dos resultados e ganhos da PoC.
-- [ ] **Rollout Geral**: Início da migração gradativa dos demais sistemas (MPI, Busca Cliente, etc.) para o novo padrão.
+- [x] **Workshop Geral**:
+    - [x] Apresentação final para **todos os Devs e POs do time**.
+    - [x] Apresentação dos resultados e ganhos da PoC.
+- [x] **Rollout Geral**: Início da migração gradativa dos demais sistemas (MPI, Busca Cliente, etc.) para o novo padrão.
 
 ---
 > [!IMPORTANT]

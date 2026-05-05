@@ -13,28 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "37_Projetos/Plano-Implantacao-DevOps.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Plano-Implantacao-DevOps"
-            }
-          }
-        ]
-      },
-      {
-        "id": "d2ed557e7b1d6406",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0327b660d4c4e601",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "37_Projetos/Jira-Backlog-DevOps.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -98,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "5078bf26a173a71e",
@@ -215,7 +194,7 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "0327b660d4c4e601",
+  "active": "f0916372466d8922",
   "lastOpenFiles": [
     "37_Projetos/Roadmap-Detalhado-DevOps.md",
     "37_Projetos/Jira-Backlog-DevOps.md",
