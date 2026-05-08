@@ -6,7 +6,7 @@
       "recursive": true
     },
     {
-      "path": "../brain",
+      "path": "G:/Meu Drive/brain",
       "description": "Base de conhecimento principal e regras de arquitetura",
       "recursive": true
     }
@@ -14,7 +14,7 @@
   "mcp_servers": {
     "obsidian": {
       "command": "npx",
-      "args": ["-y", "@blacksmithers/obsidian-forge-mcp", "../brain"]
+      "args": ["-y", "@blacksmithers/obsidian-forge-mcp", "G:/Meu Drive/brain"]
     }
   }
 }

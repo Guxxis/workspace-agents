@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "5c1c08f383bee645",
+    "id": "1b5164b0d5b9b307",
     "type": "split",
     "children": [
       {
-        "id": "058e8f9a2afed504",
+        "id": "68f5e677f71ca7f1",
         "type": "tabs",
         "children": [
           {
-            "id": "f0916372466d8922",
+            "id": "fa7b717e6e7bdb0a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "37_Projetos/Jira-Backlog-DevOps.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Jira-Backlog-DevOps"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "88009d5f2f15bd04",
+    "id": "f249e50babb8ed9a",
     "type": "split",
     "children": [
       {
-        "id": "e49f674e18d9576c",
+        "id": "e02699301a350b49",
         "type": "tabs",
         "children": [
           {
-            "id": "04cd36b6a2173ee9",
+            "id": "e6c64ca27c95c566",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,12 +44,12 @@
             }
           },
           {
-            "id": "96a81919cae3a225",
+            "id": "badb6c521d21fa87",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#infrastructure",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +61,7 @@
             }
           },
           {
-            "id": "7996aa2606764e40",
+            "id": "714ed9223fa10ada",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +74,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "5078bf26a173a71e",
+    "id": "aab50fdfa028f421",
     "type": "split",
     "children": [
       {
-        "id": "8a9d7713c661192a",
+        "id": "f1fb63efa232ab1c",
         "type": "tabs",
         "children": [
           {
-            "id": "1c6dfe6ff5a62462",
+            "id": "665027c83c7535a5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "32_Diagnostics/Diagnostic-DSW-SOLUCOES-DSW01-backup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Diagnostic-DSW-SOLUCOES-DSW01-backup"
+              "title": "Links inversos"
             }
           },
           {
-            "id": "7f9c88463a594f9f",
+            "id": "d9046425bed26abc",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "32_Diagnostics/Diagnostic-DSW-SOLUCOES-DSW01-backup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Diagnostic-DSW-SOLUCOES-DSW01-backup"
+              "title": "Links de saída"
             }
           },
           {
-            "id": "3d2aea926c386708",
+            "id": "d6f15ffce2d18bb6",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +131,7 @@
             }
           },
           {
-            "id": "942caf423f8b60b3",
+            "id": "4440b92ad343d003",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,32 +145,20 @@
             }
           },
           {
-            "id": "c78ea38c2c24c4d1",
+            "id": "2986f5d2d0f7d0df",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "32_Diagnostics/Diagnostic-DSW-SOLUCOES-DSW01-backup.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Diagnostic-DSW-SOLUCOES-DSW01-backup"
-            }
-          },
-          {
-            "id": "bb315cf6e934d405",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {},
-              "icon": "lucide-info",
-              "title": "Propriedades dos arquivos"
+              "title": "Sumário"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
@@ -194,43 +176,6 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "f0916372466d8922",
-  "lastOpenFiles": [
-    "40_Freelance/40_Freelance.md",
-    "40_Freelance",
-    "40_Freelance.md",
-    "44_Clients/Clinica-Psicologia-MVP.md",
-    "44_Clients/Client-Template.md",
-    "43_DevOps/Infrastructure-DO-Swarm.md",
-    "43_DevOps/CI-CD-Pipeline.md",
-    "42_Tech_Stack/Architecture-Decisions.md",
-    "41_Business/Product-Roadmap.md",
-    "41_Business/Business-Model.md",
-    "44_Clients",
-    "43_DevOps",
-    "42_Tech_Stack",
-    "41_Business",
-    "40_Freelance/04_Clients/Clinica-Psicologia-MVP.md",
-    "40_Freelance/04_Clients/Client-Template.md",
-    "40_Freelance/03_DevOps/CI-CD-Pipeline.md",
-    "40_Freelance/03_DevOps/Infrastructure-DO-Swarm.md",
-    "37_Projetos/Roadmap-Detalhado-DevOps.md",
-    "37_Projetos/Jira-Backlog-DevOps.md",
-    "37_Projetos/Plano-Implantacao-DevOps.md",
-    "37_Projetos/Apresentacao-Projeto-Infra.md",
-    "00_Meta/System-Instructions.md",
-    "31_Gitflow/Bitbucket-Standards.md",
-    "20_Personal/personal index.md",
-    "20_Personal",
-    "30_Work/Notion-Context-BD.md",
-    "32_Infraestructure/n8n-Maintenance.md",
-    "30_Work/Stacks-Default.md",
-    "32_Infraestructure/Jumphost-Hardening.md",
-    "30_Work/Notion-Context.md",
-    "32_Infraestructure/Infraestructure.md",
-    "32_Infraestructure",
-    "37_Projetos",
-    "01-Daily",
-    "20_Personal"
-  ]
+  "active": "fa7b717e6e7bdb0a",
+  "lastOpenFiles": []
 }
